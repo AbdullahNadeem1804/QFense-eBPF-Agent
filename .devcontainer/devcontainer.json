@@ -1,0 +1,11 @@
+{
+    "name": "QFense eBPF Lab",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "runArgs": [
+        "--privileged",
+        "--cap-add=SYS_ADMIN",
+        "--cap-add=BPF"
+    ],
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y bpfcc-tools python3-bpfcc clang llvm python3-requests python3-cryptography",
+    "postStartCommand": "sudo mount -t tracefs nodev /sys/kernel/tracing || true"
+}
