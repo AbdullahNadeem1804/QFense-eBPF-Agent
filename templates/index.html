@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QFense Threat Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-8 border-b border-gray-700 pb-4">
+            <h1 class="text-3xl font-bold tracking-tight text-purple-400">QFense eBPF Agent</h1>
+            <p class="text-gray-400 mt-1">Live Cryptographic Memory & Network Correlation</p>
+        </header>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-gray-900 text-gray-400 text-sm uppercase tracking-wide border-b border-gray-700">
+                        <th class="py-4 px-6">Process / PID</th>
+                        <th class="py-4 px-6">Container ID</th>
+                        <th class="py-4 px-6">Event Type</th>
+                        <th class="py-4 px-6">Algorithm / Details</th>
+                        <th class="py-4 px-6">Risk Assessment</th>
+                    </tr>
+                </thead>
+                <tbody id="event-log" class="divide-y divide-gray-700">
+                    <!-- Events injected here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const eventSource = new EventSource("/stream");
+        const tbody = document.getElementById("event-log");
+
+        eventSource.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            const row = document.createElement("tr");
+            row.className = "hover:bg-gray-750 transition-colors duration-150";
+            
+            // Assessment Badge Logic
+            let badgeClass = "bg-gray-600 text-gray-100";
+            let assessment = data.classification;
+            if (assessment === "SECURE") badgeClass = "bg-green-900 text-green-300 border border-green-700";
+            if (assessment === "VULNERABLE") badgeClass = "bg-orange-900 text-orange-300 border border-orange-700";
+            if (assessment === "CRITICAL") badgeClass = "bg-red-900 text-red-300 border border-red-700";
+
+            // Details formatting based on event type
+            let details = `${data.algo} (${data.bits}-bit)`;
+            if (data.type === "network") details = `Transmission to ${data.network}`;
+            if (data.type === "tls") details = `Cipher Suite: ${data.algo}`;
+
+            row.innerHTML = `
+                <td class="py-4 px-6 font-mono text-sm">${data.process} [${data.pid}]</td>
+                <td class="py-4 px-6 font-mono text-sm text-gray-400">${data.cgroup}</td>
+                <td class="py-4 px-6 font-mono text-sm">${data.type.toUpperCase()}</td>
+                <td class="py-4 px-6 font-mono text-sm font-semibold">${details}</td>
+                <td class="py-4 px-6">
+                    <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wide ${badgeClass}">
+                        ${assessment}
+                    </span>
+                </td>
+            `;
+            
+            // Insert at the top
+            tbody.insertBefore(row, tbody.firstChild);
+            
+            // Keep table from getting too long (max 20 rows)
+            if (tbody.children.length > 20) {
+                tbody.removeChild(tbody.lastChild);
+            }
+        };
+    </script>
+</body>
+</html>

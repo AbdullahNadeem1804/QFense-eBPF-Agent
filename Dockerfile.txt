@@ -1,0 +1,25 @@
+FROM ubuntu:22.04
+
+# Prevent interactive prompts during apt installations
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install eBPF compilers, BCC tools, and Web dependencies
+RUN apt-get update && apt-get install -y \
+    bpfcc-tools \
+    python3-bpfcc \
+    clang \
+    llvm \
+    python3-flask \
+    python3-requests \
+    python3-cryptography \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set up the application directory
+WORKDIR /app
+COPY . /app
+
+# Expose the dashboard port
+EXPOSE 5000
+
+# Launch the Enterprise Dashboard
+CMD ["python3", "web_dashboard.py"]
