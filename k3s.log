@@ -1,0 +1,1144 @@
+time="2026-10-30T13:32:44Z" level=info msg="Acquiring lock file /var/lib/rancher/k3s/data/.lock"
+time="2026-10-30T13:32:44Z" level=info msg="Preparing data dir /var/lib/rancher/k3s/data/786a7010d40ec795903b5283ea90e511368db829fd9b72d6a0d3540238d04a20"
+time="2026-10-30T13:32:45Z" level=info msg="Starting k3s v1.28.4+k3s2 (6ba6c1b6)"
+time="2026-10-30T13:32:45Z" level=info msg="Configuring sqlite3 database connection pooling: maxIdleConns=2, maxOpenConns=0, connMaxLifetime=0s"
+time="2026-10-30T13:32:45Z" level=info msg="Configuring database table schema and indexes, this may take a moment..."
+time="2026-10-30T13:32:45Z" level=info msg="Database tables and indexes are up to date"
+time="2026-10-30T13:32:45Z" level=info msg="Kine available at unix://kine.sock"
+time="2026-10-30T13:32:45Z" level=info msg="generated self-signed CA certificate CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45.989108758 +0000 UTC notAfter=2036-10-27 13:32:45.989108758 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:admin,O=system:masters signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:k3s-supervisor,O=system:masters signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:kube-controller-manager signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:kube-scheduler signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:apiserver,O=system:masters signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:kube-proxy signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=system:k3s-controller signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:45Z" level=info msg="certificate CN=k3s-cloud-controller-manager signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:45 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="generated self-signed CA certificate CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45.999846208 +0000 UTC notAfter=2036-10-27 13:32:45.999846208 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="certificate CN=kube-apiserver signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:46 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="generated self-signed CA certificate CN=k3s-request-header-ca@1793367166: notBefore=2026-10-30 13:32:46.001135997 +0000 UTC notAfter=2036-10-27 13:32:46.001135997 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="certificate CN=system:auth-proxy signed by CN=k3s-request-header-ca@1793367166: notBefore=2026-10-30 13:32:46 +0000 UTC notAfter=2027-10-30 13:32:46 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="generated self-signed CA certificate CN=etcd-server-ca@1793367166: notBefore=2026-10-30 13:32:46.002237924 +0000 UTC notAfter=2036-10-27 13:32:46.002237924 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="certificate CN=etcd-client signed by CN=etcd-server-ca@1793367166: notBefore=2026-10-30 13:32:46 +0000 UTC notAfter=2027-10-30 13:32:46 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="generated self-signed CA certificate CN=etcd-peer-ca@1793367166: notBefore=2026-10-30 13:32:46.003342856 +0000 UTC notAfter=2036-10-27 13:32:46.003342856 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="certificate CN=etcd-peer signed by CN=etcd-peer-ca@1793367166: notBefore=2026-10-30 13:32:46 +0000 UTC notAfter=2027-10-30 13:32:46 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="certificate CN=etcd-server signed by CN=etcd-server-ca@1793367166: notBefore=2026-10-30 13:32:46 +0000 UTC notAfter=2027-10-30 13:32:46 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=info msg="Saving cluster bootstrap data to datastore"
+time="2026-10-30T13:32:46Z" level=info msg="certificate CN=k3s,O=k3s signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:46 +0000 UTC"
+time="2026-10-30T13:32:46Z" level=warning msg="dynamiclistener [::]:6443: no cached certificate available for preload - deferring certificate load until storage initialization or first client request"
+time="2026-10-30T13:32:46Z" level=info msg="Active TLS secret / (ver=) (count 10): map[listener.cattle.io/cn-10.0.1.235:10.0.1.235 listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-codespaces-3298df:codespaces-3298df listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=090F7EEC23913CB57A90CD708646436DF9362132]"
+time="2026-10-30T13:32:46Z" level=info msg="Running kube-apiserver --advertise-port=6443 --allow-privileged=true --anonymous-auth=false --api-audiences=https://kubernetes.default.svc.cluster.local,k3s --authorization-mode=Node,RBAC --bind-address=127.0.0.1 --cert-dir=/var/lib/rancher/k3s/server/tls/temporary-certs --client-ca-file=/var/lib/rancher/k3s/server/tls/client-ca.crt --egress-selector-config-file=/var/lib/rancher/k3s/server/etc/egress-selector-config.yaml --enable-admission-plugins=NodeRestriction --enable-aggregator-routing=true --enable-bootstrap-token-auth=true --etcd-servers=unix://kine.sock --feature-gates=JobTrackingWithFinalizers=true --kubelet-certificate-authority=/var/lib/rancher/k3s/server/tls/server-ca.crt --kubelet-client-certificate=/var/lib/rancher/k3s/server/tls/client-kube-apiserver.crt --kubelet-client-key=/var/lib/rancher/k3s/server/tls/client-kube-apiserver.key --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --profiling=false --proxy-client-cert-file=/var/lib/rancher/k3s/server/tls/client-auth-proxy.crt --proxy-client-key-file=/var/lib/rancher/k3s/server/tls/client-auth-proxy.key --requestheader-allowed-names=system:auth-proxy --requestheader-client-ca-file=/var/lib/rancher/k3s/server/tls/request-header-ca.crt --requestheader-extra-headers-prefix=X-Remote-Extra- --requestheader-group-headers=X-Remote-Group --requestheader-username-headers=X-Remote-User --secure-port=6444 --service-account-issuer=https://kubernetes.default.svc.cluster.local --service-account-key-file=/var/lib/rancher/k3s/server/tls/service.key --service-account-signing-key-file=/var/lib/rancher/k3s/server/tls/service.current.key --service-cluster-ip-range=10.43.0.0/16 --service-node-port-range=30000-32767 --storage-backend=etcd3 --tls-cert-file=/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.crt --tls-cipher-suites=TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 --tls-private-key-file=/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.key"
+time="2026-10-30T13:32:46Z" level=info msg="Running kube-scheduler --authentication-kubeconfig=/var/lib/rancher/k3s/server/cred/scheduler.kubeconfig --authorization-kubeconfig=/var/lib/rancher/k3s/server/cred/scheduler.kubeconfig --bind-address=127.0.0.1 --kubeconfig=/var/lib/rancher/k3s/server/cred/scheduler.kubeconfig --leader-elect=false --profiling=false --secure-port=10259"
+time="2026-10-30T13:32:46Z" level=info msg="Waiting for API server to become available"
+W1030 13:32:46.374776   37744 feature_gate.go:241] Setting GA feature gate JobTrackingWithFinalizers=true. It will be removed in a future release.
+I1030 13:32:46.375488   37744 options.go:220] external host was not specified, using 10.0.1.235
+time="2026-10-30T13:32:46Z" level=info msg="Running kube-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/var/lib/rancher/k3s/server/cred/controller.kubeconfig --authorization-kubeconfig=/var/lib/rancher/k3s/server/cred/controller.kubeconfig --bind-address=127.0.0.1 --cluster-cidr=10.42.0.0/16 --cluster-signing-kube-apiserver-client-cert-file=/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt --cluster-signing-kube-apiserver-client-key-file=/var/lib/rancher/k3s/server/tls/client-ca.key --cluster-signing-kubelet-client-cert-file=/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt --cluster-signing-kubelet-client-key-file=/var/lib/rancher/k3s/server/tls/client-ca.key --cluster-signing-kubelet-serving-cert-file=/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt --cluster-signing-kubelet-serving-key-file=/var/lib/rancher/k3s/server/tls/server-ca.key --cluster-signing-legacy-unknown-cert-file=/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt --cluster-signing-legacy-unknown-key-file=/var/lib/rancher/k3s/server/tls/server-ca.key --configure-cloud-routes=false --controllers=*,tokencleaner,-service,-route,-cloud-node-lifecycle --feature-gates=JobTrackingWithFinalizers=true --kubeconfig=/var/lib/rancher/k3s/server/cred/controller.kubeconfig --leader-elect=false --profiling=false --root-ca-file=/var/lib/rancher/k3s/server/tls/server-ca.crt --secure-port=10257 --service-account-private-key-file=/var/lib/rancher/k3s/server/tls/service.current.key --service-cluster-ip-range=10.43.0.0/16 --use-service-account-credentials=true"
+I1030 13:32:46.376672   37744 server.go:156] Version: v1.28.4+k3s2
+I1030 13:32:46.377142   37744 server.go:158] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+time="2026-10-30T13:32:46Z" level=info msg="Running cloud-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/var/lib/rancher/k3s/server/cred/cloud-controller.kubeconfig --authorization-kubeconfig=/var/lib/rancher/k3s/server/cred/cloud-controller.kubeconfig --bind-address=127.0.0.1 --cloud-config=/var/lib/rancher/k3s/server/etc/cloud-config.yaml --cloud-provider=k3s --cluster-cidr=10.42.0.0/16 --configure-cloud-routes=false --controllers=*,-route --feature-gates=CloudDualStackNodeIPs=true --kubeconfig=/var/lib/rancher/k3s/server/cred/cloud-controller.kubeconfig --leader-elect=false --leader-elect-resource-name=k3s-cloud-controller-manager --node-status-update-frequency=1m0s --profiling=false"
+time="2026-10-30T13:32:46Z" level=info msg="Server node token is available at /var/lib/rancher/k3s/server/token"
+time="2026-10-30T13:32:46Z" level=info msg="To join server node to cluster: k3s server -s https://10.0.1.235:6443 -t ${SERVER_NODE_TOKEN}"
+time="2026-10-30T13:32:46Z" level=info msg="Agent node token is available at /var/lib/rancher/k3s/server/agent-token"
+time="2026-10-30T13:32:46Z" level=info msg="To join agent node to cluster: k3s agent -s https://10.0.1.235:6443 -t ${AGENT_NODE_TOKEN}"
+time="2026-10-30T13:32:46Z" level=info msg="Wrote kubeconfig /etc/rancher/k3s/k3s.yaml"
+time="2026-10-30T13:32:46Z" level=info msg="Run: k3s kubectl"
+I1030 13:32:46.839651   37744 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I1030 13:32:46.839905   37744 plugins.go:161] Loaded 13 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,ClusterTrustBundleAttest,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+I1030 13:32:46.840773   37744 instance.go:298] Using reconciler: lease
+I1030 13:32:46.841264   37744 shared_informer.go:311] Waiting for caches to sync for node_authorizer
+I1030 13:32:46.848404   37744 handler.go:232] Adding GroupVersion apiextensions.k8s.io v1 to ResourceManager
+W1030 13:32:46.848571   37744 genericapiserver.go:744] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I1030 13:32:46.982579   37744 handler.go:232] Adding GroupVersion  v1 to ResourceManager
+I1030 13:32:46.982964   37744 instance.go:709] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I1030 13:32:47.183113   37744 instance.go:709] API group "resource.k8s.io" is not enabled, skipping.
+I1030 13:32:47.195173   37744 handler.go:232] Adding GroupVersion authentication.k8s.io v1 to ResourceManager
+W1030 13:32:47.195367   37744 genericapiserver.go:744] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.195412   37744 genericapiserver.go:744] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.196539   37744 handler.go:232] Adding GroupVersion authorization.k8s.io v1 to ResourceManager
+W1030 13:32:47.196860   37744 genericapiserver.go:744] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+I1030 13:32:47.197874   37744 handler.go:232] Adding GroupVersion autoscaling v2 to ResourceManager
+I1030 13:32:47.198731   37744 handler.go:232] Adding GroupVersion autoscaling v1 to ResourceManager
+W1030 13:32:47.198834   37744 genericapiserver.go:744] Skipping API autoscaling/v2beta1 because it has no resources.
+W1030 13:32:47.198909   37744 genericapiserver.go:744] Skipping API autoscaling/v2beta2 because it has no resources.
+I1030 13:32:47.200288   37744 handler.go:232] Adding GroupVersion batch v1 to ResourceManager
+W1030 13:32:47.200473   37744 genericapiserver.go:744] Skipping API batch/v1beta1 because it has no resources.
+I1030 13:32:47.201428   37744 handler.go:232] Adding GroupVersion certificates.k8s.io v1 to ResourceManager
+W1030 13:32:47.201558   37744 genericapiserver.go:744] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.201649   37744 genericapiserver.go:744] Skipping API certificates.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.202221   37744 handler.go:232] Adding GroupVersion coordination.k8s.io v1 to ResourceManager
+W1030 13:32:47.202333   37744 genericapiserver.go:744] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.202465   37744 genericapiserver.go:744] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+I1030 13:32:47.203040   37744 handler.go:232] Adding GroupVersion discovery.k8s.io v1 to ResourceManager
+I1030 13:32:47.204526   37744 handler.go:232] Adding GroupVersion networking.k8s.io v1 to ResourceManager
+W1030 13:32:47.204644   37744 genericapiserver.go:744] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.204736   37744 genericapiserver.go:744] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.205258   37744 handler.go:232] Adding GroupVersion node.k8s.io v1 to ResourceManager
+W1030 13:32:47.205372   37744 genericapiserver.go:744] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.205508   37744 genericapiserver.go:744] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.206519   37744 handler.go:232] Adding GroupVersion policy v1 to ResourceManager
+W1030 13:32:47.206633   37744 genericapiserver.go:744] Skipping API policy/v1beta1 because it has no resources.
+I1030 13:32:47.208211   37744 handler.go:232] Adding GroupVersion rbac.authorization.k8s.io v1 to ResourceManager
+W1030 13:32:47.208333   37744 genericapiserver.go:744] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.208426   37744 genericapiserver.go:744] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.208932   37744 handler.go:232] Adding GroupVersion scheduling.k8s.io v1 to ResourceManager
+W1030 13:32:47.209058   37744 genericapiserver.go:744] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.209147   37744 genericapiserver.go:744] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.211051   37744 handler.go:232] Adding GroupVersion storage.k8s.io v1 to ResourceManager
+W1030 13:32:47.211173   37744 genericapiserver.go:744] Skipping API storage.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.211379   37744 genericapiserver.go:744] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.212439   37744 handler.go:232] Adding GroupVersion flowcontrol.apiserver.k8s.io v1beta3 to ResourceManager
+I1030 13:32:47.213576   37744 handler.go:232] Adding GroupVersion flowcontrol.apiserver.k8s.io v1beta2 to ResourceManager
+W1030 13:32:47.213694   37744 genericapiserver.go:744] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.213787   37744 genericapiserver.go:744] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.218985   37744 handler.go:232] Adding GroupVersion apps v1 to ResourceManager
+W1030 13:32:47.219127   37744 genericapiserver.go:744] Skipping API apps/v1beta2 because it has no resources.
+W1030 13:32:47.219252   37744 genericapiserver.go:744] Skipping API apps/v1beta1 because it has no resources.
+I1030 13:32:47.220109   37744 handler.go:232] Adding GroupVersion admissionregistration.k8s.io v1 to ResourceManager
+W1030 13:32:47.220149   37744 genericapiserver.go:744] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W1030 13:32:47.220171   37744 genericapiserver.go:744] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+I1030 13:32:47.220763   37744 handler.go:232] Adding GroupVersion events.k8s.io v1 to ResourceManager
+W1030 13:32:47.220880   37744 genericapiserver.go:744] Skipping API events.k8s.io/v1beta1 because it has no resources.
+I1030 13:32:47.225267   37744 handler.go:232] Adding GroupVersion apiregistration.k8s.io v1 to ResourceManager
+W1030 13:32:47.225399   37744 genericapiserver.go:744] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+time="2026-10-30T13:32:47Z" level=info msg="Password verified locally for node codespaces-3298df"
+time="2026-10-30T13:32:47Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:47 +0000 UTC"
+I1030 13:32:48.013365   37744 secure_serving.go:213] Serving securely on 127.0.0.1:6444
+I1030 13:32:48.013728   37744 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/var/lib/rancher/k3s/server/tls/request-header-ca.crt"
+I1030 13:32:48.013930   37744 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.crt::/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.key"
+I1030 13:32:48.014103   37744 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1030 13:32:48.015041   37744 controller.go:116] Starting legacy_token_tracking_controller
+I1030 13:32:48.015159   37744 shared_informer.go:311] Waiting for caches to sync for configmaps
+I1030 13:32:48.016045   37744 gc_controller.go:78] Starting apiserver lease garbage collector
+I1030 13:32:48.016293   37744 customresource_discovery_controller.go:289] Starting DiscoveryController
+I1030 13:32:48.016537   37744 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+I1030 13:32:48.016626   37744 shared_informer.go:311] Waiting for caches to sync for cluster_authentication_trust_controller
+I1030 13:32:48.016755   37744 apf_controller.go:372] Starting API Priority and Fairness config controller
+I1030 13:32:48.016860   37744 available_controller.go:423] Starting AvailableConditionController
+I1030 13:32:48.016951   37744 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I1030 13:32:48.017044   37744 aggregator.go:164] waiting for initial CRD sync...
+I1030 13:32:48.017404   37744 apiservice_controller.go:97] Starting APIServiceRegistrationController
+I1030 13:32:48.017504   37744 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I1030 13:32:48.017593   37744 controller.go:78] Starting OpenAPI AggregationController
+I1030 13:32:48.017740   37744 controller.go:80] Starting OpenAPI V3 AggregationController
+I1030 13:32:48.018028   37744 gc_controller.go:78] Starting apiserver lease garbage collector
+I1030 13:32:48.018181   37744 dynamic_serving_content.go:132] "Starting controller" name="aggregator-proxy-cert::/var/lib/rancher/k3s/server/tls/client-auth-proxy.crt::/var/lib/rancher/k3s/server/tls/client-auth-proxy.key"
+I1030 13:32:48.018394   37744 system_namespaces_controller.go:67] Starting system namespaces controller
+I1030 13:32:48.018501   37744 handler_discovery.go:412] Starting ResourceDiscoveryManager
+I1030 13:32:48.018608   37744 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/var/lib/rancher/k3s/server/tls/client-ca.crt"
+I1030 13:32:48.019439   37744 controller.go:134] Starting OpenAPI controller
+I1030 13:32:48.019581   37744 controller.go:85] Starting OpenAPI V3 controller
+I1030 13:32:48.019679   37744 naming_controller.go:291] Starting NamingConditionController
+I1030 13:32:48.019766   37744 establishing_controller.go:76] Starting EstablishingController
+I1030 13:32:48.019836   37744 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+I1030 13:32:48.019948   37744 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I1030 13:32:48.020011   37744 crd_finalizer.go:266] Starting CRDFinalizer
+I1030 13:32:48.020119   37744 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/var/lib/rancher/k3s/server/tls/client-ca.crt"
+I1030 13:32:48.020286   37744 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/var/lib/rancher/k3s/server/tls/request-header-ca.crt"
+I1030 13:32:48.020593   37744 crdregistration_controller.go:111] Starting crd-autoregister controller
+I1030 13:32:48.020646   37744 shared_informer.go:311] Waiting for caches to sync for crd-autoregister
+I1030 13:32:48.117131   37744 cache.go:39] Caches are synced for AvailableConditionController controller
+I1030 13:32:48.121062   37744 shared_informer.go:318] Caches are synced for crd-autoregister
+I1030 13:32:48.147590   37744 shared_informer.go:318] Caches are synced for configmaps
+I1030 13:32:48.148180   37744 shared_informer.go:318] Caches are synced for cluster_authentication_trust_controller
+I1030 13:32:48.150302   37744 apf_controller.go:377] Running API Priority and Fairness config worker
+I1030 13:32:48.150382   37744 apf_controller.go:380] Running API Priority and Fairness periodic rebalancing process
+I1030 13:32:48.150521   37744 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I1030 13:32:48.151150   37744 aggregator.go:166] initial CRD sync complete...
+I1030 13:32:48.151799   37744 autoregister_controller.go:141] Starting autoregister controller
+I1030 13:32:48.151879   37744 cache.go:32] Waiting for caches to sync for autoregister controller
+I1030 13:32:48.151957   37744 cache.go:39] Caches are synced for autoregister controller
+I1030 13:32:48.152234   37744 shared_informer.go:318] Caches are synced for node_authorizer
+time="2026-10-30T13:32:48Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:48 +0000 UTC"
+I1030 13:32:48.163313   37744 controller.go:624] quota admission added evaluator for: namespaces
+I1030 13:32:48.239491   37744 controller.go:624] quota admission added evaluator for: leases.coordination.k8s.io
+E1030 13:32:48.267151   37744 controller.go:95] Unable to perform initial Kubernetes service initialization: namespaces "default" not found
+time="2026-10-30T13:32:48Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:32:48Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+I1030 13:32:49.026994   37744 storage_scheduling.go:95] created PriorityClass system-node-critical with value 2000001000
+I1030 13:32:49.031436   37744 storage_scheduling.go:95] created PriorityClass system-cluster-critical with value 2000000000
+I1030 13:32:49.031487   37744 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+I1030 13:32:50.079883   37744 trace.go:236] Trace[734918443]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:85ef478f-71d3-4045-b9ec-4a6cbd5085d3,client:127.0.0.1,protocol:HTTP/2.0,resource:clusterroles,scope:resource,url:/apis/rbac.authorization.k8s.io/v1/clusterroles,user-agent:k3s/v1.28.4+k3s2 (linux/amd64) kubernetes/6ba6c1b,verb:POST (30-Oct-2026 13:32:49.250) (total time: 829ms):
+Trace[734918443]: ["Create etcd3" audit-id:85ef478f-71d3-4045-b9ec-4a6cbd5085d3,key:/clusterroles/system:controller:pv-protection-controller,type:*rbac.ClusterRole,resource:clusterroles.rbac.authorization.k8s.io 829ms (13:32:49.250)
+Trace[734918443]:  ---"Txn call succeeded" 829ms (13:32:50.079)]
+Trace[734918443]: [829.510319ms] [829.510319ms] END
+I1030 13:32:50.248799   37744 controller.go:624] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+I1030 13:32:50.297954   37744 controller.go:624] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+time="2026-10-30T13:32:50Z" level=info msg="Kube API server is now running"
+time="2026-10-30T13:32:50Z" level=info msg="ETCD server is now running"
+time="2026-10-30T13:32:50Z" level=info msg="k3s is up and running"
+time="2026-10-30T13:32:50Z" level=info msg="Creating k3s-supervisor event broadcaster"
+time="2026-10-30T13:32:50Z" level=info msg="Waiting for cloud-controller-manager privileges to become available"
+W1030 13:32:50.389878   37744 feature_gate.go:241] Setting GA feature gate JobTrackingWithFinalizers=true. It will be removed in a future release.
+time="2026-10-30T13:32:50Z" level=info msg="Applying CRD addons.k3s.cattle.io"
+I1030 13:32:50.530968   37744 alloc.go:330] "allocated clusterIPs" service="default/kubernetes" clusterIPs={"IPv4":"10.43.0.1"}
+time="2026-10-30T13:32:50Z" level=info msg="Applying CRD etcdsnapshotfiles.k3s.cattle.io"
+W1030 13:32:50.612720   37744 lease.go:263] Resetting endpoints for master service "kubernetes" to [10.0.1.235]
+I1030 13:32:50.623596   37744 handler.go:232] Adding GroupVersion k3s.cattle.io v1 to ResourceManager
+I1030 13:32:50.628713   37744 controller.go:624] quota admission added evaluator for: endpoints
+I1030 13:32:50.663518   37744 handler.go:232] Adding GroupVersion k3s.cattle.io v1 to ResourceManager
+time="2026-10-30T13:32:50Z" level=info msg="Applying CRD helmcharts.helm.cattle.io"
+I1030 13:32:50.696985   37744 handler.go:232] Adding GroupVersion k3s.cattle.io v1 to ResourceManager
+I1030 13:32:50.709149   37744 controller.go:624] quota admission added evaluator for: endpointslices.discovery.k8s.io
+I1030 13:32:50.731128   37744 handler.go:232] Adding GroupVersion k3s.cattle.io v1 to ResourceManager
+time="2026-10-30T13:32:50Z" level=info msg="Applying CRD helmchartconfigs.helm.cattle.io"
+I1030 13:32:50.824950   37744 handler.go:232] Adding GroupVersion helm.cattle.io v1 to ResourceManager
+I1030 13:32:50.845885   37744 handler.go:232] Adding GroupVersion helm.cattle.io v1 to ResourceManager
+I1030 13:32:50.851475   37744 handler.go:232] Adding GroupVersion helm.cattle.io v1 to ResourceManager
+time="2026-10-30T13:32:50Z" level=info msg="Waiting for CRD helmchartconfigs.helm.cattle.io to become available"
+I1030 13:32:50.875294   37744 handler.go:232] Adding GroupVersion helm.cattle.io v1 to ResourceManager
+I1030 13:32:50.886653   37744 serving.go:355] Generated self-signed cert in-memory
+time="2026-10-30T13:32:51Z" level=info msg="Done waiting for CRD helmchartconfigs.helm.cattle.io to become available"
+time="2026-10-30T13:32:51Z" level=info msg="Writing static file: /var/lib/rancher/k3s/server/static/charts/traefik-25.0.2+up25.0.0.tgz"
+time="2026-10-30T13:32:51Z" level=info msg="Writing static file: /var/lib/rancher/k3s/server/static/charts/traefik-crd-25.0.2+up25.0.0.tgz"
+I1030 13:32:51.388406   37744 controllermanager.go:189] "Starting" version="v1.28.4+k3s2"
+I1030 13:32:51.388584   37744 controllermanager.go:191] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+time="2026-10-30T13:32:51Z" level=info msg="Failed to get existing traefik HelmChart" error="helmcharts.helm.cattle.io \"traefik\" not found"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/ccm.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/metrics-server-deployment.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/rolebindings.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/traefik.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/metrics-apiservice.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/metrics-server-service.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/resource-reader.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/coredns.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/local-storage.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/aggregated-metrics-reader.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/auth-delegator.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/metrics-server/auth-reader.yaml"
+time="2026-10-30T13:32:51Z" level=info msg="Starting dynamiclistener CN filter node controller"
+time="2026-10-30T13:32:51Z" level=info msg="Tunnel server egress proxy mode: agent"
+I1030 13:32:51.402678   37744 secure_serving.go:213] Serving securely on 127.0.0.1:10257
+I1030 13:32:51.404874   37744 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1030 13:32:51.405032   37744 shared_informer.go:311] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1030 13:32:51.405157   37744 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1030 13:32:51.405395   37744 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1030 13:32:51.405524   37744 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1030 13:32:51.405642   37744 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1030 13:32:51.405753   37744 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1030 13:32:51.432063   37744 shared_informer.go:311] Waiting for caches to sync for tokens
+I1030 13:32:51.441155   37744 controller.go:624] quota admission added evaluator for: serviceaccounts
+I1030 13:32:51.443653   37744 controllermanager.go:642] "Started controller" controller="ttl-after-finished-controller"
+I1030 13:32:51.443925   37744 ttlafterfinished_controller.go:109] "Starting TTL after finished controller"
+I1030 13:32:51.444002   37744 shared_informer.go:311] Waiting for caches to sync for TTL after finished
+I1030 13:32:51.452010   37744 controllermanager.go:642] "Started controller" controller="root-ca-certificate-publisher-controller"
+I1030 13:32:51.452363   37744 publisher.go:102] "Starting root CA cert publisher controller"
+I1030 13:32:51.452517   37744 shared_informer.go:311] Waiting for caches to sync for crt configmap
+I1030 13:32:51.460312   37744 controllermanager.go:642] "Started controller" controller="daemonset-controller"
+I1030 13:32:51.460630   37744 daemon_controller.go:291] "Starting daemon sets controller"
+I1030 13:32:51.460754   37744 shared_informer.go:311] Waiting for caches to sync for daemon sets
+I1030 13:32:51.472775   37744 controllermanager.go:642] "Started controller" controller="horizontal-pod-autoscaler-controller"
+I1030 13:32:51.472909   37744 controllermanager.go:607] "Warning: controller is disabled" controller="cloud-node-lifecycle-controller"
+I1030 13:32:51.473147   37744 horizontal.go:200] "Starting HPA controller"
+I1030 13:32:51.473314   37744 shared_informer.go:311] Waiting for caches to sync for HPA
+W1030 13:32:51.480308   37744 probe.go:268] Flexvolume plugin directory at /usr/libexec/kubernetes/kubelet-plugins/volume/exec/ does not exist. Recreating.
+I1030 13:32:51.480758   37744 controllermanager.go:642] "Started controller" controller="persistentvolume-attach-detach-controller"
+I1030 13:32:51.480941   37744 attach_detach_controller.go:337] "Starting attach detach controller"
+I1030 13:32:51.480975   37744 shared_informer.go:311] Waiting for caches to sync for attach detach
+I1030 13:32:51.486882   37744 controllermanager.go:642] "Started controller" controller="replicationcontroller-controller"
+I1030 13:32:51.487086   37744 replica_set.go:214] "Starting controller" name="replicationcontroller"
+I1030 13:32:51.487153   37744 shared_informer.go:311] Waiting for caches to sync for ReplicationController
+I1030 13:32:51.492897   37744 controllermanager.go:642] "Started controller" controller="replicaset-controller"
+I1030 13:32:51.493244   37744 replica_set.go:214] "Starting controller" name="replicaset"
+I1030 13:32:51.493313   37744 shared_informer.go:311] Waiting for caches to sync for ReplicaSet
+I1030 13:32:51.499359   37744 controllermanager.go:642] "Started controller" controller="ttl-controller"
+I1030 13:32:51.499599   37744 ttl_controller.go:124] "Starting TTL controller"
+I1030 13:32:51.499714   37744 shared_informer.go:311] Waiting for caches to sync for TTL
+I1030 13:32:51.505565   37744 shared_informer.go:318] Caches are synced for RequestHeaderAuthRequestController
+I1030 13:32:51.505719   37744 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1030 13:32:51.505939   37744 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+time="2026-10-30T13:32:51Z" level=info msg="Starting k3s.cattle.io/v1, Kind=Addon controller"
+time="2026-10-30T13:32:51Z" level=info msg="Creating deploy event broadcaster"
+I1030 13:32:51.532466   37744 shared_informer.go:318] Caches are synced for tokens
+I1030 13:32:51.547973   37744 controllermanager.go:642] "Started controller" controller="token-cleaner-controller"
+I1030 13:32:51.549333   37744 tokencleaner.go:112] "Starting token cleaner controller"
+I1030 13:32:51.549414   37744 shared_informer.go:311] Waiting for caches to sync for token_cleaner
+I1030 13:32:51.549461   37744 shared_informer.go:318] Caches are synced for token_cleaner
+time="2026-10-30T13:32:51Z" level=info msg="Creating helm-controller event broadcaster"
+time="2026-10-30T13:32:51Z" level=info msg="Starting /v1, Kind=Node controller"
+time="2026-10-30T13:32:51Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:32:51Z" level=info msg="Cluster dns configmap has been set successfully"
+I1030 13:32:51.661574   37744 node_lifecycle_controller.go:431] "Controller will reconcile labels"
+I1030 13:32:51.661976   37744 controllermanager.go:642] "Started controller" controller="node-lifecycle-controller"
+I1030 13:32:51.662166   37744 controllermanager.go:607] "Warning: controller is disabled" controller="service-lb-controller"
+I1030 13:32:51.663575   37744 node_lifecycle_controller.go:465] "Sending events to api server"
+I1030 13:32:51.664333   37744 node_lifecycle_controller.go:476] "Starting node controller"
+I1030 13:32:51.664464   37744 shared_informer.go:311] Waiting for caches to sync for taint
+time="2026-10-30T13:32:51Z" level=info msg="Starting helm.cattle.io/v1, Kind=HelmChart controller"
+time="2026-10-30T13:32:51Z" level=info msg="Starting helm.cattle.io/v1, Kind=HelmChartConfig controller"
+time="2026-10-30T13:32:51Z" level=info msg="Starting rbac.authorization.k8s.io/v1, Kind=ClusterRoleBinding controller"
+time="2026-10-30T13:32:51Z" level=info msg="Starting batch/v1, Kind=Job controller"
+time="2026-10-30T13:32:51Z" level=info msg="Starting /v1, Kind=ServiceAccount controller"
+time="2026-10-30T13:32:51Z" level=info msg="Starting /v1, Kind=Secret controller"
+time="2026-10-30T13:32:51Z" level=info msg="Starting /v1, Kind=ConfigMap controller"
+I1030 13:32:51.749271   37744 controllermanager.go:642] "Started controller" controller="clusterrole-aggregation-controller"
+I1030 13:32:51.749412   37744 clusterroleaggregation_controller.go:189] "Starting ClusterRoleAggregator controller"
+I1030 13:32:51.749473   37744 shared_informer.go:311] Waiting for caches to sync for ClusterRoleAggregator
+I1030 13:32:51.887685   37744 controllermanager.go:642] "Started controller" controller="persistentvolume-protection-controller"
+I1030 13:32:51.887876   37744 pv_protection_controller.go:78] "Starting PV protection controller"
+I1030 13:32:51.887946   37744 shared_informer.go:311] Waiting for caches to sync for PV protection
+I1030 13:32:52.053005   37744 controllermanager.go:642] "Started controller" controller="endpoints-controller"
+I1030 13:32:52.053158   37744 endpoints_controller.go:174] "Starting endpoint controller"
+I1030 13:32:52.053292   37744 shared_informer.go:311] Waiting for caches to sync for endpoint
+time="2026-10-30T13:32:52Z" level=info msg="Active TLS secret kube-system/k3s-serving (ver=223) (count 10): map[listener.cattle.io/cn-10.0.1.235:10.0.1.235 listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-codespaces-3298df:codespaces-3298df listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=090F7EEC23913CB57A90CD708646436DF9362132]"
+time="2026-10-30T13:32:52Z" level=info msg="Updating TLS secret for kube-system/k3s-serving (count: 10): map[listener.cattle.io/cn-10.0.1.235:10.0.1.235 listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-codespaces-3298df:codespaces-3298df listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=090F7EEC23913CB57A90CD708646436DF9362132]"
+I1030 13:32:52.351103   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="endpoints"
+I1030 13:32:52.351772   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="networkpolicies.networking.k8s.io"
+I1030 13:32:52.351892   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="roles.rbac.authorization.k8s.io"
+I1030 13:32:52.352010   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="rolebindings.rbac.authorization.k8s.io"
+I1030 13:32:52.352185   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="addons.k3s.cattle.io"
+I1030 13:32:52.352329   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="cronjobs.batch"
+I1030 13:32:52.352437   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="leases.coordination.k8s.io"
+I1030 13:32:52.352539   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="deployments.apps"
+I1030 13:32:52.352646   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="daemonsets.apps"
+I1030 13:32:52.352740   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="statefulsets.apps"
+I1030 13:32:52.352836   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="ingresses.networking.k8s.io"
+I1030 13:32:52.352947   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="poddisruptionbudgets.policy"
+I1030 13:32:52.353041   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="csistoragecapacities.storage.k8s.io"
+I1030 13:32:52.353158   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="endpointslices.discovery.k8s.io"
+I1030 13:32:52.353296   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="helmcharts.helm.cattle.io"
+I1030 13:32:52.353397   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="jobs.batch"
+W1030 13:32:52.353480   37744 shared_informer.go:593] resyncPeriod 12h48m41.374361368s is smaller than resyncCheckPeriod 13h56m45.530780728s and the informer has already started. Changing it to 13h56m45.530780728s
+I1030 13:32:52.353596   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="serviceaccounts"
+I1030 13:32:52.353711   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="limitranges"
+I1030 13:32:52.353804   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="horizontalpodautoscalers.autoscaling"
+I1030 13:32:52.353896   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="replicasets.apps"
+I1030 13:32:52.354012   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="controllerrevisions.apps"
+I1030 13:32:52.354112   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="helmchartconfigs.helm.cattle.io"
+I1030 13:32:52.354234   37744 resource_quota_monitor.go:224] "QuotaMonitor created object count evaluator" resource="podtemplates"
+I1030 13:32:52.358742   37744 controllermanager.go:642] "Started controller" controller="resourcequota-controller"
+I1030 13:32:52.358974   37744 resource_quota_controller.go:294] "Starting resource quota controller"
+I1030 13:32:52.359035   37744 shared_informer.go:311] Waiting for caches to sync for resource quota
+I1030 13:32:52.359122   37744 resource_quota_monitor.go:305] "QuotaMonitor running"
+I1030 13:32:52.557897   37744 controllermanager.go:642] "Started controller" controller="disruption-controller"
+I1030 13:32:52.558049   37744 disruption.go:433] "Sending events to api server."
+I1030 13:32:52.558140   37744 disruption.go:444] "Starting disruption controller"
+I1030 13:32:52.558213   37744 shared_informer.go:311] Waiting for caches to sync for disruption
+time="2026-10-30T13:32:52Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:32:52.698970   37744 controllermanager.go:642] "Started controller" controller="cronjob-controller"
+I1030 13:32:52.702343   37744 cronjob_controllerv2.go:139] "Starting cronjob controller v2"
+I1030 13:32:52.702425   37744 shared_informer.go:311] Waiting for caches to sync for cronjob
+I1030 13:32:52.702526   37744 event.go:307] "Event occurred" object="codespaces-3298df" fieldPath="" kind="Node" apiVersion="" type="Normal" reason="NodePasswordValidationComplete" message="Deferred node password secret validation complete"
+I1030 13:32:52.836045   37744 controllermanager.go:642] "Started controller" controller="statefulset-controller"
+I1030 13:32:52.836249   37744 controllermanager.go:607] "Warning: controller is disabled" controller="bootstrap-signer-controller"
+I1030 13:32:52.836309   37744 controllermanager.go:607] "Warning: controller is disabled" controller="node-route-controller"
+I1030 13:32:52.836465   37744 stateful_set.go:161] "Starting stateful set controller"
+I1030 13:32:52.836580   37744 shared_informer.go:311] Waiting for caches to sync for stateful set
+I1030 13:32:52.986628   37744 controllermanager.go:642] "Started controller" controller="persistentvolume-binder-controller"
+I1030 13:32:52.986834   37744 pv_controller_base.go:319] "Starting persistent volume controller"
+I1030 13:32:52.986917   37744 shared_informer.go:311] Waiting for caches to sync for persistent volume
+I1030 13:32:53.139600   37744 controllermanager.go:642] "Started controller" controller="endpointslice-controller"
+I1030 13:32:53.139970   37744 endpointslice_controller.go:264] "Starting endpoint slice controller"
+I1030 13:32:53.140060   37744 shared_informer.go:311] Waiting for caches to sync for endpoint_slice
+I1030 13:32:53.286042   37744 controllermanager.go:642] "Started controller" controller="pod-garbage-collector-controller"
+I1030 13:32:53.286299   37744 gc_controller.go:101] "Starting GC controller"
+I1030 13:32:53.286402   37744 shared_informer.go:311] Waiting for caches to sync for GC
+I1030 13:32:53.436473   37744 controllermanager.go:642] "Started controller" controller="job-controller"
+I1030 13:32:53.436667   37744 job_controller.go:226] "Starting job controller"
+I1030 13:32:53.436720   37744 shared_informer.go:311] Waiting for caches to sync for job
+I1030 13:32:53.530924   37744 controller.go:624] quota admission added evaluator for: addons.k3s.cattle.io
+I1030 13:32:53.542503   37744 event.go:307] "Event occurred" object="kube-system/ccm" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/ccm.yaml\""
+I1030 13:32:53.573682   37744 event.go:307] "Event occurred" object="kube-system/ccm" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/ccm.yaml\""
+I1030 13:32:53.587378   37744 controllermanager.go:642] "Started controller" controller="deployment-controller"
+I1030 13:32:53.588030   37744 deployment_controller.go:168] "Starting controller" controller="deployment"
+I1030 13:32:53.588157   37744 shared_informer.go:311] Waiting for caches to sync for deployment
+I1030 13:32:53.589522   37744 event.go:307] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/coredns.yaml\""
+time="2026-10-30T13:32:53Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:32:53.738442   37744 controller.go:624] quota admission added evaluator for: deployments.apps
+I1030 13:32:53.777309   37744 alloc.go:330] "allocated clusterIPs" service="kube-system/kube-dns" clusterIPs={"IPv4":"10.43.0.10"}
+I1030 13:32:53.780951   37744 event.go:307] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/coredns.yaml\""
+I1030 13:32:53.822970   37744 event.go:307] "Event occurred" object="kube-system/local-storage" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/local-storage.yaml\""
+I1030 13:32:53.861818   37744 controllermanager.go:642] "Started controller" controller="namespace-controller"
+I1030 13:32:53.862010   37744 namespace_controller.go:197] "Starting namespace controller"
+I1030 13:32:53.862107   37744 shared_informer.go:311] Waiting for caches to sync for namespace
+I1030 13:32:53.897956   37744 event.go:307] "Event occurred" object="kube-system/local-storage" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/local-storage.yaml\""
+I1030 13:32:53.911609   37744 event.go:307] "Event occurred" object="kube-system/aggregated-metrics-reader" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/aggregated-metrics-reader.yaml\""
+I1030 13:32:53.918872   37744 event.go:307] "Event occurred" object="kube-system/aggregated-metrics-reader" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/aggregated-metrics-reader.yaml\""
+I1030 13:32:53.928646   37744 event.go:307] "Event occurred" object="kube-system/auth-delegator" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/auth-delegator.yaml\""
+I1030 13:32:53.943980   37744 event.go:307] "Event occurred" object="kube-system/auth-delegator" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/auth-delegator.yaml\""
+I1030 13:32:53.955744   37744 event.go:307] "Event occurred" object="kube-system/auth-reader" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/auth-reader.yaml\""
+I1030 13:32:53.963802   37744 event.go:307] "Event occurred" object="kube-system/auth-reader" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/auth-reader.yaml\""
+I1030 13:32:54.008449   37744 controllermanager.go:642] "Started controller" controller="certificatesigningrequest-cleaner-controller"
+I1030 13:32:54.008552   37744 cleaner.go:83] "Starting CSR cleaner controller"
+I1030 13:32:54.008959   37744 event.go:307] "Event occurred" object="kube-system/metrics-apiservice" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/metrics-apiservice.yaml\""
+I1030 13:32:54.027436   37744 event.go:307] "Event occurred" object="kube-system/metrics-apiservice" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/metrics-apiservice.yaml\""
+I1030 13:32:54.028236   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+W1030 13:32:54.037791   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:32:54.037883   37744 controller.go:146] Error updating APIService "v1beta1.metrics.k8s.io" with err: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+E1030 13:32:54.037957   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: service "metrics-server" not found
+I1030 13:32:54.038029   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+I1030 13:32:54.144453   37744 controllermanager.go:642] "Started controller" controller="serviceaccount-controller"
+I1030 13:32:54.144583   37744 serviceaccounts_controller.go:111] "Starting service account controller"
+I1030 13:32:54.144617   37744 shared_informer.go:311] Waiting for caches to sync for service account
+I1030 13:32:54.390333   37744 event.go:307] "Event occurred" object="kube-system/metrics-server-deployment" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/metrics-server-deployment.yaml\""
+I1030 13:32:54.396760   37744 controllermanager.go:642] "Started controller" controller="garbage-collector-controller"
+I1030 13:32:54.398700   37744 garbagecollector.go:155] "Starting controller" controller="garbagecollector"
+I1030 13:32:54.400242   37744 shared_informer.go:311] Waiting for caches to sync for garbage collector
+I1030 13:32:54.400417   37744 graph_builder.go:294] "Running" component="GraphBuilder"
+I1030 13:32:54.430562   37744 event.go:307] "Event occurred" object="kube-system/metrics-server-deployment" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/metrics-server-deployment.yaml\""
+I1030 13:32:54.475978   37744 controllermanager.go:642] "Started controller" controller="certificatesigningrequest-approving-controller"
+I1030 13:32:54.477272   37744 certificate_controller.go:115] "Starting certificate controller" name="csrapproving"
+I1030 13:32:54.477338   37744 shared_informer.go:311] Waiting for caches to sync for certificate-csrapproving
+I1030 13:32:54.636713   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:32:54Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:32:54.714165   37744 controllermanager.go:642] "Started controller" controller="persistentvolumeclaim-protection-controller"
+I1030 13:32:54.714456   37744 pvc_protection_controller.go:102] "Starting PVC protection controller"
+I1030 13:32:54.714579   37744 shared_informer.go:311] Waiting for caches to sync for PVC protection
+I1030 13:32:54.719858   37744 serving.go:355] Generated self-signed cert in-memory
+I1030 13:32:54.816007   37744 event.go:307] "Event occurred" object="kube-system/metrics-server-service" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/metrics-server-service.yaml\""
+I1030 13:32:54.947771   37744 controllermanager.go:642] "Started controller" controller="ephemeral-volume-controller"
+I1030 13:32:54.948481   37744 controller.go:169] "Starting ephemeral volume controller"
+I1030 13:32:54.948745   37744 shared_informer.go:311] Waiting for caches to sync for ephemeral
+I1030 13:32:54.967656   37744 alloc.go:330] "allocated clusterIPs" service="kube-system/metrics-server" clusterIPs={"IPv4":"10.43.184.35"}
+I1030 13:32:54.969929   37744 event.go:307] "Event occurred" object="kube-system/metrics-server-service" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/metrics-server-service.yaml\""
+W1030 13:32:55.000990   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:32:55.001594   37744 controller.go:146] Error updating APIService "v1beta1.metrics.k8s.io" with err: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+E1030 13:32:55.002033   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: endpoints "metrics-server" not found
+I1030 13:32:55.002429   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+I1030 13:32:55.005115   37744 controllermanager.go:642] "Started controller" controller="endpointslice-mirroring-controller"
+I1030 13:32:55.005614   37744 endpointslicemirroring_controller.go:223] "Starting EndpointSliceMirroring controller"
+I1030 13:32:55.005824   37744 shared_informer.go:311] Waiting for caches to sync for endpoint_slice_mirroring
+W1030 13:32:55.027763   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:32:55.028418   37744 controller.go:113] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: Error, could not get list of group versions for APIService
+I1030 13:32:55.028601   37744 controller.go:126] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+W1030 13:32:55.028668   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:32:55.028819   37744 controller.go:102] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+I1030 13:32:55.029543   37744 controller.go:109] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+I1030 13:32:55.038962   37744 controllermanager.go:642] "Started controller" controller="certificatesigningrequest-signing-controller"
+I1030 13:32:55.039290   37744 certificate_controller.go:115] "Starting certificate controller" name="csrsigning-legacy-unknown"
+I1030 13:32:55.039437   37744 shared_informer.go:311] Waiting for caches to sync for certificate-csrsigning-legacy-unknown
+I1030 13:32:55.039489   37744 certificate_controller.go:115] "Starting certificate controller" name="csrsigning-kubelet-serving"
+I1030 13:32:55.039691   37744 shared_informer.go:311] Waiting for caches to sync for certificate-csrsigning-kubelet-serving
+I1030 13:32:55.039872   37744 certificate_controller.go:115] "Starting certificate controller" name="csrsigning-kubelet-client"
+I1030 13:32:55.040122   37744 shared_informer.go:311] Waiting for caches to sync for certificate-csrsigning-kubelet-client
+I1030 13:32:55.040322   37744 certificate_controller.go:115] "Starting certificate controller" name="csrsigning-kube-apiserver-client"
+I1030 13:32:55.040348   37744 shared_informer.go:311] Waiting for caches to sync for certificate-csrsigning-kube-apiserver-client
+I1030 13:32:55.040396   37744 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/server-ca.key"
+I1030 13:32:55.040484   37744 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/server-ca.key"
+I1030 13:32:55.040550   37744 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/client-ca.key"
+I1030 13:32:55.040616   37744 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/client-ca.key"
+I1030 13:32:55.327486   37744 serving.go:355] Generated self-signed cert in-memory
+I1030 13:32:58.225438   37744 trace.go:236] Trace[1000104886]: "Get" accept:application/json, */*,audit-id:1b1f295e-52e8-4a9f-9784-09737612e74f,client:127.0.0.1,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/codespaces-3298df,user-agent:k3s-supervisor@codespaces-3298df/v1.28.4+k3s2 (linux/amd64) k3s/6ba6c1b6,verb:GET (30-Oct-2026 13:32:55.649) (total time: 2575ms):
+Trace[1000104886]: [2.575463527s] [2.575463527s] END
+time="2026-10-30T13:32:58Z" level=info msg="Slow SQL (started: 2026-10-30 13:32:55.992889218 +0000 UTC m=+10.128934950) (total time: 2.230332847s):  SELECT ( SELECT MAX(rkv.id) AS id FROM kine AS rkv), ( SELECT MAX(crkv.prev_revision) AS prev_revision FROM kine AS crkv WHERE crkv.name = 'compact_rev_key'), kv.id AS theid, kv.name, kv.created, kv.deleted, kv.create_revision, kv.prev_revision, kv.lease, kv.value, kv.old_value FROM kine AS kv WHERE kv.name LIKE ? AND kv.id > ? ORDER BY kv.id ASC LIMIT 500 : [[% 289]]"
+time="2026-10-30T13:32:58Z" level=info msg="Slow SQL (started: 2026-10-30 13:32:55.193952384 +0000 UTC m=+9.329998115) (total time: 3.029378775s): INSERT INTO kine(name, created, deleted, create_revision, prev_revision, lease, value, old_value) values(?, ?, ?, ?, ?, ?, ?, ?) : [[/registry/k3s.cattle.io/addons/kube-system/resource-reader 1 0 0 0 0 [123 34 97 112 105 86 101 114 115 105 111 110 34 58 34 107 51 115 46 99 97 116 116 108 101 46 105 111 47 118 49 34 44 34 107 105 110 100 34 58 34 65 100 100 111 110 34 44 34 109 101 116 97 100 97 116 97 34 58 123 34 99 114 101 97 116 105 111 110 84 105 109 101 115 116 97 109 112 34 58 34 50 48 50 54 45 49 48 45 51 48 84 49 51 58 51 50 58 53 53 90 34 44 34 103 101 110 101 114 97 116 105 111 110 34 58 49 44 34 109 97 110 97 103 101 100 70 105 101 108 100 115 34 58 91 123 34 97 112 105 86 101 114 115 105 111 110 34 58 34 107 51 115 46 99 97 116 116 108 101 46 105 111 47 118 49 34 44 34 102 105 101 108 100 115 84 121 112 101 34 58 34 70 105 101 108 100 115 86 49 34 44 34 102 105 101 108 100 115 86 49 34 58 123 34 102 58 115 112 101 99 34 58 123 34 46 34 58 123 125 44 34 102 58 115 111 117 114 99 101 34 58 123 125 125 125 44 34 109 97 110 97 103 101 114 34 58 34 100 101 112 108 111 121 64 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 34 44 34 111 112 101 114 97 116 105 111 110 34 58 34 85 112 100 97 116 101 34 44 34 116 105 109 101 34 58 34 50 48 50 54 45 49 48 45 51 48 84 49 51 58 51 50 58 53 53 90 34 125 93 44 34 110 97 109 101 34 58 34 114 101 115 111 117 114 99 101 45 114 101 97 100 101 114 34 44 34 110 97 109 101 115 112 97 99 101 34 58 34 107 117 98 101 45 115 121 115 116 101 109 34 44 34 117 105 100 34 58 34 56 51 97 56 102 49 99 55 45 102 54 99 56 45 52 100 48 55 45 56 48 97 100 45 57 102 97 54 97 48 54 99 55 101 102 49 34 125 44 34 115 112 101 99 34 58 123 34 115 111 117 114 99 101 34 58 34 47 118 97 114 47 108 105 98 47 114 97 110 99 104 101 114 47 107 51 115 47 115 101 114 118 101 114 47 109 97 110 105 102 101 115 116 115 47 109 101 116 114 105 99 115 45 115 101 114 118 101 114 47 114 101 115 111 117 114 99 101 45 114 101 97 100 101 114 46 121 97 109 108 34 125 125 10] []]]"
+time="2026-10-30T13:32:58Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:32:58Z" level=info msg="Slow SQL (started: 2026-10-30 13:32:53.59241683 +0000 UTC m=+7.728462562) (total time: 4.66649561s): INSERT INTO kine(name, created, deleted, create_revision, prev_revision, lease, value, old_value) values(?, ?, ?, ?, ?, ?, ?, ?) : [[/registry/events/kube-system/coredns.18e351f155a268a2 1 0 0 0 3660 [107 56 115 0 10 11 10 2 118 49 18 5 69 118 101 110 116 18 146 5 10 250 2 10 24 99 111 114 101 100 110 115 46 49 56 101 51 53 49 102 49 53 53 97 50 54 56 97 50 18 0 26 11 107 117 98 101 45 115 121 115 116 101 109 34 0 42 36 101 53 48 100 56 97 52 51 45 56 51 54 101 45 52 101 52 49 45 56 102 49 98 45 57 51 49 100 50 102 55 97 101 49 48 54 50 0 56 0 66 8 8 133 185 146 215 6 16 0 138 1 151 2 10 24 100 101 112 108 111 121 64 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 18 6 85 112 100 97 116 101 26 2 118 49 34 8 8 133 185 146 215 6 16 0 50 8 70 105 101 108 100 115 86 49 58 216 1 10 213 1 123 34 102 58 99 111 117 110 116 34 58 123 125 44 34 102 58 102 105 114 115 116 84 105 109 101 115 116 97 109 112 34 58 123 125 44 34 102 58 105 110 118 111 108 118 101 100 79 98 106 101 99 116 34 58 123 125 44 34 102 58 108 97 115 116 84 105 109 101 115 116 97 109 112 34 58 123 125 44 34 102 58 109 101 115 115 97 103 101 34 58 123 125 44 34 102 58 114 101 97 115 111 110 34 58 123 125 44 34 102 58 114 101 112 111 114 116 105 110 103 67 111 109 112 111 110 101 110 116 34 58 123 125 44 34 102 58 114 101 112 111 114 116 105 110 103 73 110 115 116 97 110 99 101 34 58 123 125 44 34 102 58 115 111 117 114 99 101 34 58 123 34 102 58 99 111 109 112 111 110 101 110 116 34 58 123 125 44 34 102 58 104 111 115 116 34 58 123 125 125 44 34 102 58 116 121 112 101 34 58 123 125 125 66 0 18 92 10 5 65 100 100 111 110 18 11 107 117 98 101 45 115 121 115 116 101 109 26 7 99 111 114 101 100 110 115 34 36 97 50 57 100 51 57 51 56 45 52 100 51 48 45 52 55 52 56 45 98 54 52 53 45 99 99 102 100 55 54 101 99 102 49 101 102 42 16 107 51 115 46 99 97 116 116 108 101 46 105 111 47 118 49 50 3 50 52 50 58 0 26 16 65 112 112 108 121 105 110 103 77 97 110 105 102 101 115 116 34 73 65 112 112 108 121 105 110 103 32 109 97 110 105 102 101 115 116 32 97 116 32 34 47 118 97 114 47 108 105 98 47 114 97 110 99 104 101 114 47 107 51 115 47 115 101 114 118 101 114 47 109 97 110 105 102 101 115 116 115 47 99 111 114 101 100 110 115 46 121 97 109 108 34 42 27 10 6 100 101 112 108 111 121 18 17 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 50 8 8 133 185 146 215 6 16 0 58 8 8 133 185 146 215 6 16 0 64 1 74 6 78 111 114 109 97 108 82 0 98 0 114 6 100 101 112 108 111 121 122 17 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 26 0 34 0] []]]"
+I1030 13:32:58.325042   37744 trace.go:236] Trace[620630932]: "Create" accept:application/json, */*,audit-id:4a05d40c-7d1d-4db7-b804-bfb7fd2d7400,client:127.0.0.1,protocol:HTTP/2.0,resource:addons,scope:resource,url:/apis/k3s.cattle.io/v1/namespaces/kube-system/addons,user-agent:deploy@codespaces-3298df/v1.28.4+k3s2 (linux/amd64) k3s/6ba6c1b6,verb:POST (30-Oct-2026 13:32:55.180) (total time: 3144ms):
+Trace[620630932]: ["Create etcd3" audit-id:4a05d40c-7d1d-4db7-b804-bfb7fd2d7400,key:/k3s.cattle.io/addons/kube-system/resource-reader,type:*unstructured.Unstructured,resource:addons.k3s.cattle.io 3143ms (13:32:55.181)
+Trace[620630932]:  ---"Txn call succeeded" 3143ms (13:32:58.324)]
+Trace[620630932]: [3.144156493s] [3.144156493s] END
+I1030 13:32:58.335739   37744 event.go:307] "Event occurred" object="kube-system/resource-reader" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/resource-reader.yaml\""
+I1030 13:32:58.365162   37744 trace.go:236] Trace[1535982023]: "Create" accept:application/json, */*,audit-id:57dd3a33-dccd-45a0-8aa4-71dc0059b0a5,client:127.0.0.1,protocol:HTTP/2.0,resource:events,scope:resource,url:/api/v1/namespaces/kube-system/events,user-agent:deploy@codespaces-3298df/v1.28.4+k3s2 (linux/amd64) k3s/6ba6c1b6,verb:POST (30-Oct-2026 13:32:53.591) (total time: 4773ms):
+Trace[1535982023]: ["Create etcd3" audit-id:57dd3a33-dccd-45a0-8aa4-71dc0059b0a5,key:/events/kube-system/coredns.18e351f155a268a2,type:*core.Event,resource:events 4773ms (13:32:53.591)
+Trace[1535982023]:  ---"Txn call succeeded" 4773ms (13:32:58.365)]
+Trace[1535982023]: [4.773797104s] [4.773797104s] END
+I1030 13:32:58.703146   37744 event.go:307] "Event occurred" object="kube-system/resource-reader" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/metrics-server/resource-reader.yaml\""
+I1030 13:32:58.845858   37744 event.go:307] "Event occurred" object="kube-system/rolebindings" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/rolebindings.yaml\""
+time="2026-10-30T13:32:58Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:58 +0000 UTC"
+I1030 13:32:59.017418   37744 event.go:307] "Event occurred" object="kube-system/rolebindings" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/rolebindings.yaml\""
+I1030 13:32:59.282586   37744 event.go:307] "Event occurred" object="kube-system/traefik" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/traefik.yaml\""
+time="2026-10-30T13:32:59Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:32:59.305408   37744 controllermanager.go:168] Version: v1.28.4+k3s2
+I1030 13:32:59.313063   37744 secure_serving.go:213] Serving securely on 127.0.0.1:10258
+I1030 13:32:59.313713   37744 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1030 13:32:59.313849   37744 shared_informer.go:311] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1030 13:32:59.313963   37744 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1030 13:32:59.314088   37744 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1030 13:32:59.314234   37744 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1030 13:32:59.314336   37744 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1030 13:32:59.314448   37744 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1030 13:32:59.318937   37744 controller.go:624] quota admission added evaluator for: helmcharts.helm.cattle.io
+I1030 13:32:59.341144   37744 event.go:307] "Event occurred" object="kube-system/traefik" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/traefik.yaml\""
+time="2026-10-30T13:32:59Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:32:59 +0000 UTC"
+E1030 13:32:59.374516   37744 controllermanager.go:524] unable to get all supported resources from server: unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+time="2026-10-30T13:32:59Z" level=info msg="Creating  event broadcaster"
+I1030 13:32:59.414154   37744 shared_informer.go:318] Caches are synced for RequestHeaderAuthRequestController
+I1030 13:32:59.414394   37744 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1030 13:32:59.414630   37744 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1030 13:32:59.469082   37744 event.go:307] "Event occurred" object="kube-system/traefik-crd" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik-crd"
+I1030 13:32:59.469310   37744 event.go:307] "Event occurred" object="kube-system/traefik" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik"
+I1030 13:32:59.540825   37744 controller.go:624] quota admission added evaluator for: jobs.batch
+time="2026-10-30T13:32:59Z" level=error msg="error syncing 'kube-system/traefik-crd': handler helm-controller-chart-registration: helmcharts.helm.cattle.io \"traefik-crd\" not found, requeuing"
+time="2026-10-30T13:32:59Z" level=error msg="error syncing 'kube-system/traefik': handler helm-controller-chart-registration: helmcharts.helm.cattle.io \"traefik\" not found, requeuing"
+I1030 13:32:59.598710   37744 event.go:307] "Event occurred" object="kube-system/traefik-crd" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik-crd"
+I1030 13:32:59.599308   37744 event.go:307] "Event occurred" object="kube-system/traefik" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik"
+time="2026-10-30T13:32:59Z" level=info msg="Starting /v1, Kind=Node controller"
+I1030 13:32:59.693577   37744 event.go:307] "Event occurred" object="kube-system/traefik-crd" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik-crd"
+time="2026-10-30T13:32:59Z" level=info msg="Starting /v1, Kind=Pod controller"
+I1030 13:32:59.726632   37744 event.go:307] "Event occurred" object="kube-system/traefik-crd" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik-crd"
+time="2026-10-30T13:32:59Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:32:59Z" level=info msg="Starting apps/v1, Kind=DaemonSet controller"
+time="2026-10-30T13:32:59Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+I1030 13:32:59.820080   37744 controllermanager.go:337] Started "cloud-node-lifecycle-controller"
+I1030 13:32:59.820595   37744 controllermanager.go:337] Started "service-lb-controller"
+W1030 13:32:59.820700   37744 controllermanager.go:314] "node-route-controller" is disabled
+I1030 13:32:59.820993   37744 controllermanager.go:337] Started "cloud-node-controller"
+time="2026-10-30T13:32:59Z" level=info msg="Starting discovery.k8s.io/v1, Kind=EndpointSlice controller"
+I1030 13:32:59.821906   37744 node_lifecycle_controller.go:113] Sending events to api server
+I1030 13:32:59.822037   37744 controller.go:231] Starting service controller
+I1030 13:32:59.822118   37744 shared_informer.go:311] Waiting for caches to sync for service
+I1030 13:32:59.822217   37744 node_controller.go:165] Sending events to api server.
+I1030 13:32:59.822318   37744 node_controller.go:174] Waiting for informer caches to sync
+I1030 13:32:59.826376   37744 event.go:307] "Event occurred" object="kube-system/traefik" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik"
+I1030 13:32:59.846778   37744 event.go:307] "Event occurred" object="kube-system/traefik" fieldPath="" kind="HelmChart" apiVersion="helm.cattle.io/v1" type="Normal" reason="ApplyJob" message="Applying HelmChart using Job kube-system/helm-install-traefik"
+I1030 13:32:59.922241   37744 shared_informer.go:318] Caches are synced for service
+time="2026-10-30T13:33:00Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:01Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:02Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:03Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:04Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:33:05.128900   37744 range_allocator.go:111] "No Secondary Service CIDR provided. Skipping filtering out secondary service addresses"
+I1030 13:33:05.129105   37744 controllermanager.go:642] "Started controller" controller="node-ipam-controller"
+I1030 13:33:05.129610   37744 node_ipam_controller.go:162] "Starting ipam controller"
+I1030 13:33:05.129738   37744 shared_informer.go:311] Waiting for caches to sync for node
+I1030 13:33:05.136525   37744 controllermanager.go:642] "Started controller" controller="persistentvolume-expander-controller"
+I1030 13:33:05.140273   37744 expand_controller.go:328] "Starting expand controller"
+I1030 13:33:05.140443   37744 shared_informer.go:311] Waiting for caches to sync for expand
+I1030 13:33:05.144101   37744 shared_informer.go:311] Waiting for caches to sync for resource quota
+I1030 13:33:05.173360   37744 shared_informer.go:318] Caches are synced for HPA
+I1030 13:33:05.177709   37744 job_controller.go:562] "enqueueing job" key="kube-system/helm-install-traefik"
+I1030 13:33:05.179226   37744 job_controller.go:562] "enqueueing job" key="kube-system/helm-install-traefik-crd"
+I1030 13:33:05.186839   37744 shared_informer.go:318] Caches are synced for GC
+I1030 13:33:05.187488   37744 shared_informer.go:318] Caches are synced for persistent volume
+I1030 13:33:05.187663   37744 shared_informer.go:318] Caches are synced for ReplicationController
+I1030 13:33:05.188270   37744 shared_informer.go:318] Caches are synced for PV protection
+I1030 13:33:05.188461   37744 shared_informer.go:318] Caches are synced for deployment
+I1030 13:33:05.193380   37744 shared_informer.go:318] Caches are synced for ReplicaSet
+I1030 13:33:05.196738   37744 shared_informer.go:311] Waiting for caches to sync for garbage collector
+I1030 13:33:05.199843   37744 shared_informer.go:318] Caches are synced for TTL
+I1030 13:33:05.203069   37744 shared_informer.go:318] Caches are synced for cronjob
+I1030 13:33:05.207990   37744 shared_informer.go:318] Caches are synced for endpoint_slice_mirroring
+I1030 13:33:05.214715   37744 shared_informer.go:318] Caches are synced for PVC protection
+I1030 13:33:05.222955   37744 controller.go:624] quota admission added evaluator for: replicasets.apps
+I1030 13:33:05.229790   37744 shared_informer.go:318] Caches are synced for node
+I1030 13:33:05.230003   37744 range_allocator.go:174] "Sending events to api server"
+I1030 13:33:05.230150   37744 range_allocator.go:178] "Starting range CIDR allocator"
+I1030 13:33:05.230303   37744 shared_informer.go:311] Waiting for caches to sync for cidrallocator
+I1030 13:33:05.230423   37744 shared_informer.go:318] Caches are synced for cidrallocator
+I1030 13:33:05.231738   37744 event.go:307] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set coredns-6799fbcd5 to 1"
+I1030 13:33:05.231903   37744 event.go:307] "Event occurred" object="kube-system/local-path-provisioner" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set local-path-provisioner-84db5d44d9 to 1"
+I1030 13:33:05.232027   37744 event.go:307] "Event occurred" object="kube-system/metrics-server" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set metrics-server-67c658944b to 1"
+I1030 13:33:05.237071   37744 shared_informer.go:318] Caches are synced for job
+I1030 13:33:05.239535   37744 shared_informer.go:318] Caches are synced for certificate-csrsigning-legacy-unknown
+I1030 13:33:05.240138   37744 shared_informer.go:318] Caches are synced for endpoint_slice
+I1030 13:33:05.240391   37744 shared_informer.go:318] Caches are synced for certificate-csrsigning-kube-apiserver-client
+I1030 13:33:05.240644   37744 shared_informer.go:318] Caches are synced for expand
+I1030 13:33:05.240736   37744 shared_informer.go:318] Caches are synced for certificate-csrsigning-kubelet-serving
+I1030 13:33:05.243261   37744 shared_informer.go:318] Caches are synced for certificate-csrsigning-kubelet-client
+I1030 13:33:05.244130   37744 shared_informer.go:318] Caches are synced for TTL after finished
+I1030 13:33:05.244687   37744 shared_informer.go:318] Caches are synced for service account
+I1030 13:33:05.248918   37744 shared_informer.go:318] Caches are synced for ephemeral
+I1030 13:33:05.250184   37744 shared_informer.go:318] Caches are synced for ClusterRoleAggregator
+I1030 13:33:05.252697   37744 shared_informer.go:318] Caches are synced for crt configmap
+I1030 13:33:05.253525   37744 shared_informer.go:318] Caches are synced for endpoint
+I1030 13:33:05.260880   37744 shared_informer.go:318] Caches are synced for daemon sets
+I1030 13:33:05.264704   37744 shared_informer.go:318] Caches are synced for taint
+I1030 13:33:05.264859   37744 taint_manager.go:205] "Starting NoExecuteTaintManager"
+I1030 13:33:05.265006   37744 taint_manager.go:210] "Sending events to api server"
+I1030 13:33:05.266086   37744 shared_informer.go:318] Caches are synced for namespace
+I1030 13:33:05.277700   37744 shared_informer.go:318] Caches are synced for certificate-csrapproving
+I1030 13:33:05.285565   37744 shared_informer.go:318] Caches are synced for attach detach
+time="2026-10-30T13:33:05Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:33:05.390300   37744 event.go:307] "Event occurred" object="kube-system/coredns-6799fbcd5" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: coredns-6799fbcd5-p98g7"
+I1030 13:33:05.390424   37744 event.go:307] "Event occurred" object="kube-system/local-path-provisioner-84db5d44d9" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: local-path-provisioner-84db5d44d9-z6czj"
+I1030 13:33:05.390476   37744 event.go:307] "Event occurred" object="kube-system/metrics-server-67c658944b" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: metrics-server-67c658944b-qkckv"
+I1030 13:33:05.390641   37744 event.go:307] "Event occurred" object="kube-system/helm-install-traefik" fieldPath="" kind="Job" apiVersion="batch/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: helm-install-traefik-v2f28"
+I1030 13:33:05.390706   37744 event.go:307] "Event occurred" object="kube-system/helm-install-traefik-crd" fieldPath="" kind="Job" apiVersion="batch/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: helm-install-traefik-crd-lsnj9"
+I1030 13:33:05.390886   37744 job_controller.go:562] "enqueueing job" key="kube-system/helm-install-traefik"
+I1030 13:33:05.391549   37744 job_controller.go:562] "enqueueing job" key="kube-system/helm-install-traefik-crd"
+I1030 13:33:05.436678   37744 shared_informer.go:318] Caches are synced for stateful set
+W1030 13:33:05.440382   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:33:05.440555   37744 controller.go:146] Error updating APIService "v1beta1.metrics.k8s.io" with err: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+E1030 13:33:05.440786   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:33:05.440935   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+I1030 13:33:05.445258   37744 shared_informer.go:318] Caches are synced for resource quota
+I1030 13:33:05.458855   37744 shared_informer.go:318] Caches are synced for disruption
+I1030 13:33:05.459426   37744 shared_informer.go:318] Caches are synced for resource quota
+I1030 13:33:05.467497   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/local-path-provisioner-84db5d44d9" duration="234.892098ms"
+I1030 13:33:05.467954   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/metrics-server-67c658944b" duration="235.790655ms"
+I1030 13:33:05.468787   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/coredns-6799fbcd5" duration="236.316006ms"
+I1030 13:33:05.477742   37744 job_controller.go:562] "enqueueing job" key="kube-system/helm-install-traefik-crd"
+I1030 13:33:05.478651   37744 job_controller.go:562] "enqueueing job" key="kube-system/helm-install-traefik"
+I1030 13:33:05.683912   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/coredns-6799fbcd5" duration="214.431737ms"
+I1030 13:33:05.695376   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/metrics-server-67c658944b" duration="226.913725ms"
+I1030 13:33:05.757233   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/local-path-provisioner-84db5d44d9" duration="289.567882ms"
+I1030 13:33:05.759548   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/local-path-provisioner-84db5d44d9" duration="51.136µs"
+I1030 13:33:05.759747   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/coredns-6799fbcd5" duration="74.461657ms"
+I1030 13:33:05.759886   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/coredns-6799fbcd5" duration="70.091µs"
+I1030 13:33:05.760773   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/metrics-server-67c658944b" duration="65.161096ms"
+I1030 13:33:05.761120   37744 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/metrics-server-67c658944b" duration="52.549µs"
+I1030 13:33:05.800339   37744 shared_informer.go:318] Caches are synced for garbage collector
+I1030 13:33:05.800467   37744 garbagecollector.go:166] "All resource monitors have synced. Proceeding to collect garbage"
+I1030 13:33:05.810167   37744 shared_informer.go:318] Caches are synced for garbage collector
+time="2026-10-30T13:33:06Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:06Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:06 +0000 UTC"
+W1030 13:33:06.440735   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:33:06.440856   37744 controller.go:113] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: Error, could not get list of group versions for APIService
+I1030 13:33:06.440986   37744 controller.go:126] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+W1030 13:33:06.441144   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:33:06.441357   37744 controller.go:102] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+I1030 13:33:06.442227   37744 controller.go:109] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+time="2026-10-30T13:33:06Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:06 +0000 UTC"
+time="2026-10-30T13:33:07Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:33:07Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:33:07Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:08Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:09Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:10Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:11Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:12Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:13Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:14Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:15Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:16Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:17Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:17 +0000 UTC"
+time="2026-10-30T13:33:17Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:17 +0000 UTC"
+time="2026-10-30T13:33:17Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:17Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:33:17Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:33:18Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:19Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:20Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:21Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:22Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:23Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:23 +0000 UTC"
+time="2026-10-30T13:33:23Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:23Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:23 +0000 UTC"
+time="2026-10-30T13:33:24Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:33:24Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:33:24Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:25Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:26Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:27Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:28Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:29Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:30Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:31Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:32Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:33Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:34Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:34 +0000 UTC"
+time="2026-10-30T13:33:34Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:34Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:34 +0000 UTC"
+time="2026-10-30T13:33:35Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:33:35Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+E1030 13:33:35.451882   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+time="2026-10-30T13:33:35Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:33:35.820084   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:33:36Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:37Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:38Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:39Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:40Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:41Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:42Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:43Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:44Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:45Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:45 +0000 UTC"
+time="2026-10-30T13:33:45Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:45Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:45 +0000 UTC"
+time="2026-10-30T13:33:46Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:33:46Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:33:46Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:47Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:33:48.019311   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:33:48.019456   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+time="2026-10-30T13:33:48Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:49Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:50Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:51Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:52Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:53Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:54Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:55Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:55 +0000 UTC"
+time="2026-10-30T13:33:55Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:56Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:33:56 +0000 UTC"
+time="2026-10-30T13:33:56Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:33:56Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:33:56Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:57Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:58Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:33:59Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:00Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:01Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:02Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:03Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:04Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:34:05.456322   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+time="2026-10-30T13:34:05Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:34:05.836506   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+W1030 13:34:06.450040   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:34:06.450286   37744 controller.go:113] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: Error, could not get list of group versions for APIService
+I1030 13:34:06.450385   37744 controller.go:126] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+W1030 13:34:06.450600   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:34:06.450810   37744 controller.go:102] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+I1030 13:34:06.451388   37744 controller.go:109] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+time="2026-10-30T13:34:06Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:07Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:07 +0000 UTC"
+time="2026-10-30T13:34:07Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:07 +0000 UTC"
+time="2026-10-30T13:34:07Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:34:07Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:34:07Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:08Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:09Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:10Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:11Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:12Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:13Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:14Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:15Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:16Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:17Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:18Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:18 +0000 UTC"
+time="2026-10-30T13:34:18Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:18 +0000 UTC"
+time="2026-10-30T13:34:18Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:19Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:34:19Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:34:19Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:20Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:21Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:22Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:23Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:24Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:25Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:26Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:27Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:28Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:28 +0000 UTC"
+time="2026-10-30T13:34:28Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:29Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:29 +0000 UTC"
+time="2026-10-30T13:34:29Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:34:29Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:34:29Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:30Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:31Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:32Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:33Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:34Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:34:35.460367   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+I1030 13:34:35.850907   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:34:36Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:36Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:36 +0000 UTC"
+time="2026-10-30T13:34:37Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:37 +0000 UTC"
+time="2026-10-30T13:34:37Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:37Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:34:37Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:34:38Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:39Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:40Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:41Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:42Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:43Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:44Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:45Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:46Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:46Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:46 +0000 UTC"
+time="2026-10-30T13:34:47Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:47Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:47 +0000 UTC"
+time="2026-10-30T13:34:47Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:34:47Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+E1030 13:34:48.018659   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:34:48.018895   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+time="2026-10-30T13:34:48Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:49Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:50Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:51Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:52Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:53Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:54Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:55Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:56Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:56Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:56 +0000 UTC"
+time="2026-10-30T13:34:57Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:57Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:34:57 +0000 UTC"
+time="2026-10-30T13:34:57Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:34:57Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:34:58Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:34:59Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:00Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:01Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:02Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:03Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:04Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:05Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:35:05.464685   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+I1030 13:35:05.919163   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:35:06Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:06Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:06 +0000 UTC"
+time="2026-10-30T13:35:06Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:06 +0000 UTC"
+time="2026-10-30T13:35:07Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:07Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:07Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:08Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:09Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:10Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:11Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:12Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:13Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:14Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:15Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:15Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:15 +0000 UTC"
+time="2026-10-30T13:35:16Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:16 +0000 UTC"
+time="2026-10-30T13:35:16Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:16Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:16Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:17Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:18Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:19Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:20Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:21Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:22Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:23Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:24Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:24 +0000 UTC"
+time="2026-10-30T13:35:24Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:24 +0000 UTC"
+time="2026-10-30T13:35:24Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:24Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:24Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:25Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:26Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:27Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:28Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:29Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:30Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:31Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:32Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:33Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:33Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:33 +0000 UTC"
+time="2026-10-30T13:35:34Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:34 +0000 UTC"
+time="2026-10-30T13:35:34Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:34Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:34Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:35:35.477343   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+time="2026-10-30T13:35:35Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:35:35.926526   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:35:36Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:37Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:38Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:39Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:40Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:41Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:42Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:43Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:44Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:44 +0000 UTC"
+time="2026-10-30T13:35:44Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:44 +0000 UTC"
+time="2026-10-30T13:35:44Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:44Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:44Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:45Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:46Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:47Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:35:48.019962   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:35:48.020293   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+time="2026-10-30T13:35:48Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:49Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:50Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:51Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:52Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:52 +0000 UTC"
+time="2026-10-30T13:35:52Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:52 +0000 UTC"
+time="2026-10-30T13:35:52Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:52Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:52Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:53Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:54Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:55Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:56Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:57Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:58Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:35:59Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:59 +0000 UTC"
+time="2026-10-30T13:35:59Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:35:59 +0000 UTC"
+time="2026-10-30T13:35:59Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:35:59Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:35:59Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:00Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:01Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:02Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:03Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:04Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:36:05.518392   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+time="2026-10-30T13:36:05Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:05 +0000 UTC"
+time="2026-10-30T13:36:05Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:05 +0000 UTC"
+time="2026-10-30T13:36:05Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:36:05.973124   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:36:06Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:36:06Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+W1030 13:36:06.450924   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:36:06.451142   37744 controller.go:113] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: Error, could not get list of group versions for APIService
+I1030 13:36:06.451253   37744 controller.go:126] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+W1030 13:36:06.451538   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:36:06.451689   37744 controller.go:102] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+I1030 13:36:06.452350   37744 controller.go:109] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+time="2026-10-30T13:36:06Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:07Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:08Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:09Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:10Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:11Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:13Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:13Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:13 +0000 UTC"
+time="2026-10-30T13:36:13Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:13 +0000 UTC"
+time="2026-10-30T13:36:14Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:14Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:36:14Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:36:15Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:16Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:17Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:18Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:19Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:20Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:21Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:22Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:23Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:23Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:23 +0000 UTC"
+time="2026-10-30T13:36:23Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:23 +0000 UTC"
+time="2026-10-30T13:36:23Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:36:24Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:36:24Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:25Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:26Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:27Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:28Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:29Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:30Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:31Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:32Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:33Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:34Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:34Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:34 +0000 UTC"
+time="2026-10-30T13:36:34Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:34 +0000 UTC"
+time="2026-10-30T13:36:34Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:36:34Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:36:35Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:36:35.534681   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+I1030 13:36:35.980963   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:36:36Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:37Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:38Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:39Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:40Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:41Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:42Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:43Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:44Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:44Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:44 +0000 UTC"
+time="2026-10-30T13:36:44Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:44 +0000 UTC"
+time="2026-10-30T13:36:45Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:36:45Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:45Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:36:46Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:47Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:36:48.018662   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:36:48.018815   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+time="2026-10-30T13:36:48Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:49Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:50Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:51Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:52Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:52Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:52 +0000 UTC"
+time="2026-10-30T13:36:53Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:53 +0000 UTC"
+time="2026-10-30T13:36:53Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:36:53Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:53Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:36:54Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:55Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:56Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:57Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:58Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:59Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:36:59Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:36:59 +0000 UTC"
+time="2026-10-30T13:37:00Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:00 +0000 UTC"
+time="2026-10-30T13:37:00Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:00Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:00Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:37:01Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:02Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:03Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:04Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:05Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:37:05.539122   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+I1030 13:37:05.992081   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:37:06Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:07Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:07 +0000 UTC"
+time="2026-10-30T13:37:07Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:07Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:07 +0000 UTC"
+time="2026-10-30T13:37:07Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:08Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:37:08Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:09Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:10Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:11Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:12Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:13Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:14Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:14Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:14 +0000 UTC"
+time="2026-10-30T13:37:15Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:15 +0000 UTC"
+time="2026-10-30T13:37:15Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:15Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:15Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:37:16Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:17Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:18Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:19Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:20Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:21Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:22Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:23Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:23 +0000 UTC"
+time="2026-10-30T13:37:24Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:24 +0000 UTC"
+time="2026-10-30T13:37:24Z" level=info msg="Slow SQL (started: 2026-10-30 13:37:23.772478833 +0000 UTC m=+277.908524584) (total time: 1.145563801s): INSERT INTO kine(name, created, deleted, create_revision, prev_revision, lease, value, old_value) values(?, ?, ?, ?, ?, ?, ?, ?) : [[/registry/leases/kube-system/apiserver-tidyxvpvfwofucvbxxi3kycija 0 0 35 453 0 [107 56 115 0 10 31 10 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 18 5 76 101 97 115 101 18 170 4 10 201 3 10 36 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 18 0 26 11 107 117 98 101 45 115 121 115 116 101 109 34 0 42 36 98 51 99 48 55 53 55 102 45 49 52 98 98 45 52 100 100 52 45 56 49 56 99 45 49 49 52 51 57 56 57 57 52 57 55 53 50 0 56 0 66 8 8 128 185 146 215 6 16 0 90 50 10 32 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 18 14 107 117 98 101 45 97 112 105 115 101 114 118 101 114 90 43 10 22 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 18 17 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 138 1 249 1 10 3 107 51 115 18 6 85 112 100 97 116 101 26 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 34 8 8 147 187 146 215 6 16 0 50 8 70 105 101 108 100 115 86 49 58 187 1 10 184 1 123 34 102 58 109 101 116 97 100 97 116 97 34 58 123 34 102 58 108 97 98 101 108 115 34 58 123 34 46 34 58 123 125 44 34 102 58 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 34 58 123 125 125 125 44 34 102 58 115 112 101 99 34 58 123 34 102 58 104 111 108 100 101 114 73 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 108 101 97 115 101 68 117 114 97 116 105 111 110 83 101 99 111 110 100 115 34 58 123 125 44 34 102 58 114 101 110 101 119 84 105 109 101 34 58 123 125 125 125 66 0 18 92 10 73 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 95 50 99 102 53 48 53 100 55 45 56 53 102 50 45 52 53 99 50 45 56 49 101 48 45 53 102 55 57 99 51 102 57 48 57 51 51 16 144 28 34 12 8 147 187 146 215 6 16 160 234 166 226 2 26 0 34 0] [107 56 115 0 10 31 10 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 18 5 76 101 97 115 101 18 170 4 10 201 3 10 36 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 18 0 26 11 107 117 98 101 45 115 121 115 116 101 109 34 0 42 36 98 51 99 48 55 53 55 102 45 49 52 98 98 45 52 100 100 52 45 56 49 56 99 45 49 49 52 51 57 56 57 57 52 57 55 53 50 0 56 0 66 8 8 128 185 146 215 6 16 0 90 50 10 32 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 18 14 107 117 98 101 45 97 112 105 115 101 114 118 101 114 90 43 10 22 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 18 17 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 138 1 249 1 10 3 107 51 115 18 6 85 112 100 97 116 101 26 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 34 8 8 137 187 146 215 6 16 0 50 8 70 105 101 108 100 115 86 49 58 187 1 10 184 1 123 34 102 58 109 101 116 97 100 97 116 97 34 58 123 34 102 58 108 97 98 101 108 115 34 58 123 34 46 34 58 123 125 44 34 102 58 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 34 58 123 125 125 125 44 34 102 58 115 112 101 99 34 58 123 34 102 58 104 111 108 100 101 114 73 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 108 101 97 115 101 68 117 114 97 116 105 111 110 83 101 99 111 110 100 115 34 58 123 125 44 34 102 58 114 101 110 101 119 84 105 109 101 34 58 123 125 125 125 66 0 18 92 10 73 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 95 50 99 102 53 48 53 100 55 45 56 53 102 50 45 52 53 99 50 45 56 49 101 48 45 53 102 55 57 99 51 102 57 48 57 51 51 16 144 28 34 12 8 137 187 146 215 6 16 128 214 145 207 1 26 0 34 0]]]"
+I1030 13:37:24.923248   37744 trace.go:236] Trace[1234990308]: "Get" accept:application/json, */*,audit-id:e2ba97f6-42b6-4010-b916-ef83f5406f20,client:127.0.0.1,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/codespaces-3298df,user-agent:k3s-supervisor@codespaces-3298df/v1.28.4+k3s2 (linux/amd64) k3s/6ba6c1b6,verb:GET (30-Oct-2026 13:37:23.861) (total time: 1061ms):
+Trace[1234990308]: [1.061801023s] [1.061801023s] END
+I1030 13:37:24.924489   37744 trace.go:236] Trace[609652681]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:25d590a6-db95-4ad0-8355-b1abb8d0546c,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/apiserver-tidyxvpvfwofucvbxxi3kycija,user-agent:k3s/v1.28.4+k3s2 (linux/amd64) kubernetes/6ba6c1b,verb:PUT (30-Oct-2026 13:37:23.747) (total time: 1176ms):
+Trace[609652681]: ["GuaranteedUpdate etcd3" audit-id:25d590a6-db95-4ad0-8355-b1abb8d0546c,key:/leases/kube-system/apiserver-tidyxvpvfwofucvbxxi3kycija,type:*coordination.Lease,resource:leases.coordination.k8s.io 1176ms (13:37:23.747)
+Trace[609652681]:  ---"Txn call completed" 1175ms (13:37:24.924)]
+Trace[609652681]: [1.176872558s] [1.176872558s] END
+time="2026-10-30T13:37:24Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:25Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:25Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:37:25Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:26Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:27Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:28Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:29Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:30Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:32Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:33Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:34Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:34Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:34 +0000 UTC"
+time="2026-10-30T13:37:34Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:34 +0000 UTC"
+time="2026-10-30T13:37:35Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:35Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:35Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+E1030 13:37:35.550841   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+I1030 13:37:36.026553   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:37:36Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:37Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:38Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:39Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:40Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:41Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:42Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:42Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:42 +0000 UTC"
+time="2026-10-30T13:37:43Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:43 +0000 UTC"
+time="2026-10-30T13:37:43Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:43Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:44Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:37:44Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:45Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:46Z" level=info msg="COMPACT revision 0 has already been compacted"
+time="2026-10-30T13:37:46Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:47Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:37:48.022163   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:37:48.023656   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+I1030 13:37:48.131955   37744 handler.go:232] Adding GroupVersion k3s.cattle.io v1 to ResourceManager
+I1030 13:37:48.143063   37744 handler.go:232] Adding GroupVersion helm.cattle.io v1 to ResourceManager
+W1030 13:37:48.143961   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:37:48.144234   37744 controller.go:146] Error updating APIService "v1beta1.metrics.k8s.io" with err: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+E1030 13:37:48.144508   37744 handler_proxy.go:137] error resolving kube-system/metrics-server: no endpoints available for service "metrics-server"
+I1030 13:37:48.144723   37744 handler.go:232] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+time="2026-10-30T13:37:48Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+W1030 13:37:49.144487   37744 handler_proxy.go:93] no RequestInfo found in the context
+W1030 13:37:49.144690   37744 handler_proxy.go:93] no RequestInfo found in the context
+E1030 13:37:49.146420   37744 controller.go:102] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: failed to download v1beta1.metrics.k8s.io: failed to retrieve openAPI spec, http error: ResponseCode: 503, Body: service unavailable
+, Header: map[Content-Type:[text/plain; charset=utf-8] X-Content-Type-Options:[nosniff]]
+I1030 13:37:49.146488   37744 controller.go:109] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+E1030 13:37:49.146551   37744 controller.go:113] loading OpenAPI spec for "v1beta1.metrics.k8s.io" failed with: Error, could not get list of group versions for APIService
+I1030 13:37:49.147493   37744 controller.go:126] OpenAPI AggregationController: action for item v1beta1.metrics.k8s.io: Rate Limited Requeue.
+time="2026-10-30T13:37:49Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:49Z" level=info msg="Slow SQL (started: 2026-10-30 13:37:46.005502621 +0000 UTC m=+300.141548354) (total time: 3.514522647s): PRAGMA wal_checkpoint(FULL) : [[]]"
+time="2026-10-30T13:37:50Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:51Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:51Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:51 +0000 UTC"
+time="2026-10-30T13:37:51Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:37:51 +0000 UTC"
+time="2026-10-30T13:37:52Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:37:52Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:37:52Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:53Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:54Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:55Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:56Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:57Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:37:58Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:00Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:01Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:02Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:03Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:03Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:38:03 +0000 UTC"
+time="2026-10-30T13:38:04Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:04Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:38:04 +0000 UTC"
+time="2026-10-30T13:38:05Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:38:05Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:38:05Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+E1030 13:38:05.563542   37744 resource_quota_controller.go:440] unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1
+I1030 13:38:06.063100   37744 garbagecollector.go:816] "failed to discover some groups" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+time="2026-10-30T13:38:06Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:07Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:07Z" level=info msg="Slow SQL (started: 2026-10-30 13:38:06.321065467 +0000 UTC m=+320.457111199) (total time: 1.495688096s): INSERT INTO kine(name, created, deleted, create_revision, prev_revision, lease, value, old_value) values(?, ?, ?, ?, ?, ?, ?, ?) : [[/registry/leases/kube-system/apiserver-tidyxvpvfwofucvbxxi3kycija 0 0 35 461 0 [107 56 115 0 10 31 10 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 18 5 76 101 97 115 101 18 170 4 10 201 3 10 36 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 18 0 26 11 107 117 98 101 45 115 121 115 116 101 109 34 0 42 36 98 51 99 48 55 53 55 102 45 49 52 98 98 45 52 100 100 52 45 56 49 56 99 45 49 49 52 51 57 56 57 57 52 57 55 53 50 0 56 0 66 8 8 128 185 146 215 6 16 0 90 50 10 32 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 18 14 107 117 98 101 45 97 112 105 115 101 114 118 101 114 90 43 10 22 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 18 17 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 138 1 249 1 10 3 107 51 115 18 6 85 112 100 97 116 101 26 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 34 8 8 190 187 146 215 6 16 0 50 8 70 105 101 108 100 115 86 49 58 187 1 10 184 1 123 34 102 58 109 101 116 97 100 97 116 97 34 58 123 34 102 58 108 97 98 101 108 115 34 58 123 34 46 34 58 123 125 44 34 102 58 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 34 58 123 125 125 125 44 34 102 58 115 112 101 99 34 58 123 34 102 58 104 111 108 100 101 114 73 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 108 101 97 115 101 68 117 114 97 116 105 111 110 83 101 99 111 110 100 115 34 58 123 125 44 34 102 58 114 101 110 101 119 84 105 109 101 34 58 123 125 125 125 66 0 18 92 10 73 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 95 50 99 102 53 48 53 100 55 45 56 53 102 50 45 52 53 99 50 45 56 49 101 48 45 53 102 55 57 99 51 102 57 48 57 51 51 16 144 28 34 12 8 190 187 146 215 6 16 136 246 238 149 1 26 0 34 0] [107 56 115 0 10 31 10 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 18 5 76 101 97 115 101 18 170 4 10 201 3 10 36 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 18 0 26 11 107 117 98 101 45 115 121 115 116 101 109 34 0 42 36 98 51 99 48 55 53 55 102 45 49 52 98 98 45 52 100 100 52 45 56 49 56 99 45 49 49 52 51 57 56 57 57 52 57 55 53 50 0 56 0 66 8 8 128 185 146 215 6 16 0 90 50 10 32 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 18 14 107 117 98 101 45 97 112 105 115 101 114 118 101 114 90 43 10 22 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 18 17 99 111 100 101 115 112 97 99 101 115 45 51 50 57 56 100 102 138 1 249 1 10 3 107 51 115 18 6 85 112 100 97 116 101 26 22 99 111 111 114 100 105 110 97 116 105 111 110 46 107 56 115 46 105 111 47 118 49 34 8 8 179 187 146 215 6 16 0 50 8 70 105 101 108 100 115 86 49 58 187 1 10 184 1 123 34 102 58 109 101 116 97 100 97 116 97 34 58 123 34 102 58 108 97 98 101 108 115 34 58 123 34 46 34 58 123 125 44 34 102 58 97 112 105 115 101 114 118 101 114 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 107 117 98 101 114 110 101 116 101 115 46 105 111 47 104 111 115 116 110 97 109 101 34 58 123 125 125 125 44 34 102 58 115 112 101 99 34 58 123 34 102 58 104 111 108 100 101 114 73 100 101 110 116 105 116 121 34 58 123 125 44 34 102 58 108 101 97 115 101 68 117 114 97 116 105 111 110 83 101 99 111 110 100 115 34 58 123 125 44 34 102 58 114 101 110 101 119 84 105 109 101 34 58 123 125 125 125 66 0 18 92 10 73 97 112 105 115 101 114 118 101 114 45 116 105 100 121 120 118 112 118 102 119 111 102 117 99 118 98 120 120 105 51 107 121 99 105 106 97 95 50 99 102 53 48 53 100 55 45 56 53 102 50 45 52 53 99 50 45 56 49 101 48 45 53 102 55 57 99 51 102 57 48 57 51 51 16 144 28 34 12 8 179 187 146 215 6 16 216 211 147 165 3 26 0 34 0]]]"
+I1030 13:38:07.818976   37744 trace.go:236] Trace[1956537879]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:d83c60de-f102-4f6a-99f4-af207b0fd9f7,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/apiserver-tidyxvpvfwofucvbxxi3kycija,user-agent:k3s/v1.28.4+k3s2 (linux/amd64) kubernetes/6ba6c1b,verb:PUT (30-Oct-2026 13:38:06.315) (total time: 1503ms):
+Trace[1956537879]: ["GuaranteedUpdate etcd3" audit-id:d83c60de-f102-4f6a-99f4-af207b0fd9f7,key:/leases/kube-system/apiserver-tidyxvpvfwofucvbxxi3kycija,type:*coordination.Lease,resource:leases.coordination.k8s.io 1503ms (13:38:06.315)
+Trace[1956537879]:  ---"Txn call completed" 1501ms (13:38:07.818)]
+Trace[1956537879]: [1.503455104s] [1.503455104s] END
+time="2026-10-30T13:38:08Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:09Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:10Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:11Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:11Z" level=info msg="Slow SQL (started: 2026-10-30 13:38:10.470703458 +0000 UTC m=+324.606749190) (total time: 1.004036062s): INSERT INTO kine(name, created, deleted, create_revision, prev_revision, lease, value, old_value) values(?, ?, ?, ?, ?, ?, ?, ?) : [[/registry/masterleases/10.0.1.235 0 0 193 462 15 [107 56 115 0 10 15 10 2 118 49 18 9 69 110 100 112 111 105 110 116 115 18 36 10 16 10 0 18 0 26 0 34 0 42 0 50 0 56 33 66 0 18 16 10 14 10 10 49 48 46 48 46 49 46 50 51 53 26 0 26 0 34 0] [107 56 115 0 10 15 10 2 118 49 18 9 69 110 100 112 111 105 110 116 115 18 36 10 16 10 0 18 0 26 0 34 0 42 0 50 0 56 32 66 0 18 16 10 14 10 10 49 48 46 48 46 49 46 50 51 53 26 0 26 0 34 0]]]"
+I1030 13:38:11.482597   37744 trace.go:236] Trace[621070019]: "GuaranteedUpdate etcd3" audit-id:,key:/masterleases/10.0.1.235,type:*v1.Endpoints,resource:apiServerIPInfo (30-Oct-2026 13:38:10.466) (total time: 1016ms):
+Trace[621070019]: ---"Txn call completed" 1014ms (13:38:11.482)
+Trace[621070019]: [1.016033456s] [1.016033456s] END
+time="2026-10-30T13:38:12Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:13Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:14Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:15Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:15Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:38:15 +0000 UTC"
+time="2026-10-30T13:38:16Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:38:16 +0000 UTC"
+time="2026-10-30T13:38:16Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:16Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:38:16Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:38:17Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:18Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:19Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:20Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:21Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:22Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:23Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:24Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:25Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:26Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:27Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:28Z" level=info msg="certificate CN=codespaces-3298df signed by CN=k3s-server-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:38:28 +0000 UTC"
+time="2026-10-30T13:38:28Z" level=info msg="certificate CN=system:node:codespaces-3298df,O=system:nodes signed by CN=k3s-client-ca@1793367165: notBefore=2026-10-30 13:32:45 +0000 UTC notAfter=2027-10-30 13:38:28 +0000 UTC"
+time="2026-10-30T13:38:28Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:29Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2026-10-30T13:38:29Z" level=info msg="Waiting to retrieve agent configuration; server is not ready: \"overlayfs\" snapshotter cannot be enabled for \"/var/lib/rancher/k3s/agent/containerd\", try using \"fuse-overlayfs\" or \"native\": failed to mount overlay: invalid argument"
+time="2026-10-30T13:38:29Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:30Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+I1030 13:38:30.978678   37744 trace.go:236] Trace[434771095]: "GuaranteedUpdate etcd3" audit-id:,key:/masterleases/10.0.1.235,type:*v1.Endpoints,resource:apiServerIPInfo (30-Oct-2026 13:38:30.471) (total time: 507ms):
+Trace[434771095]: ---"Txn call completed" 498ms (13:38:30.978)
+Trace[434771095]: [507.379797ms] [507.379797ms] END
+time="2026-10-30T13:38:31Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+time="2026-10-30T13:38:32Z" level=info msg="Waiting for control-plane node codespaces-3298df startup: nodes \"codespaces-3298df\" not found"
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x1e8 pc=0x413fdcd]
+
+goroutine 1 [running]:
+github.com/k3s-io/k3s/pkg/agent.run({_, _}, {{0xc00118b3b0, 0x6a}, {0x0, 0x0}, {0x0, 0x0}, {0xc00097d830, 0x16}, ...}, ...)
+	/go/src/github.com/k3s-io/k3s/pkg/agent/run.go:55 +0x8d
+github.com/k3s-io/k3s/pkg/agent.Run({_, _}, {{0xc00118b3b0, 0x6a}, {0x0, 0x0}, {0x0, 0x0}, {0xc00097d830, 0x16}, ...})
+	/go/src/github.com/k3s-io/k3s/pkg/agent/run.go:274 +0x14e
+github.com/k3s-io/k3s/pkg/cli/server.run(0xc000a2f080, 0x966fd60, {0xc000c9c9f8, 0x0, 0x0?}, {0xc000c9c9f8, 0x0, 0x9462ac0?})
+	/go/src/github.com/k3s-io/k3s/pkg/cli/server/server.go:550 +0x3b88
+github.com/k3s-io/k3s/pkg/cli/server.Run(0xc000a2f080?)
+	/go/src/github.com/k3s-io/k3s/pkg/cli/server/server.go:41 +0x35
+github.com/urfave/cli.HandleAction({0x4f01ee0?, 0x5e602f8?}, 0x6?)
+	/go/pkg/mod/github.com/urfave/cli@v1.22.14/app.go:524 +0x50
+github.com/urfave/cli.Command.Run({{0x59cff62, 0x6}, {0x0, 0x0}, {0x0, 0x0, 0x0}, {0x5a183a4, 0x15}, {0xc00097c1c8, ...}, ...}, ...)
+	/go/pkg/mod/github.com/urfave/cli@v1.22.14/command.go:175 +0x67b
+github.com/urfave/cli.(*App).Run(0xc0009df500, {0xc000074140, 0x2, 0x2})
+	/go/pkg/mod/github.com/urfave/cli@v1.22.14/app.go:277 +0xb87
+main.main()
+	/go/src/github.com/k3s-io/k3s/cmd/server/main.go:81 +0xc1e
