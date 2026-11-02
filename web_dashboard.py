@@ -13,8 +13,13 @@ app = Flask(__name__)
 event_queue = queue.Queue()
 
 # 2. Compile eBPF
-with open("probe.c", "r") as f:
-    bpf_text = f.read()
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent
+BPF_SOURCE = ROOT_DIR / "agent" / "probe.c"
+
+with BPF_SOURCE.open("r", encoding="utf-8") as source_file:
+    bpf_text = source_file.read()
 b = BPF(text=bpf_text)
 
 # Attach Uprobes

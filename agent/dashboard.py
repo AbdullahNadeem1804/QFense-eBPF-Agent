@@ -9,9 +9,12 @@ print("=" * 70)
 print("[*] QFense Enterprise Agent: Deep Cryptographic Inspection")
 print("=" * 70)
 
-with open("probe.c", "r") as f:
-    bpf_text = f.read()
+from pathlib import Path
 
+BPF_SOURCE = Path(__file__).resolve().parent / "probe.c"
+
+with BPF_SOURCE.open("r", encoding="utf-8") as source_file:
+    bpf_text = source_file.read()
 b = BPF(text=bpf_text)
 
 # 1. Attach libcrypto Uprobes (Memory & Bit Length)
