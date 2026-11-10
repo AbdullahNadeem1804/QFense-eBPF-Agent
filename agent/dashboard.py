@@ -1,29 +1,36 @@
 #!/usr/bin/env python3
 from bcc import BPF
 import ctypes
+import re
+import argparse
+
+parser = argparse.ArgumentParser(description="QFense Semantic Discovery Engine")
+parser.add_argument("--pid", type=int, help="Attach to a specific PID", default=-1)
+parser.add_argument("--lib", type=str, help="Library to attach to (name or path)", default="crypto")
+args = parser.parse_args()
 
 print("=" * 60)
-print("[*] QFense Enterprise Agent: Semantic Discovery Engine")
+print(f"[*] QFense Enterprise Agent: Semantic Discovery Engine")
+print(f"[*] Target Library: {args.lib}")
+if args.pid != -1:
+    print(f"[*] Mode: PID Target ({args.pid})")
 print("=" * 60)
 
-# Load the C code
 with open("probe.c", "r") as f:
     bpf_text = f.read()
 
 b = BPF(text=bpf_text)
 
-# Attach the three distinct hooks
+# Use the specific library path provided
 print("[*] Attaching Context Probe...")
-b.attach_uprobe(name="crypto", sym="EVP_PKEY_CTX_new_from_name", fn_name="probe_evp_context")
+b.attach_uprobe(name=args.lib, sym="EVP_PKEY_CTX_new_from_name", fn_name="probe_evp_context", pid=args.pid)
 
 print("[*] Attaching Keygen Entry Probe...")
-b.attach_uprobe(name="crypto", sym="EVP_PKEY_generate", fn_name="probe_evp_keygen_entry")
+b.attach_uprobe(name=args.lib, sym="EVP_PKEY_generate", fn_name="probe_evp_keygen_entry", pid=args.pid)
 
 print("[*] Attaching Keygen Return Probe...")
-b.attach_uretprobe(name="crypto", sym="EVP_PKEY_generate", fn_name="probe_evp_keygen_return")
+b.attach_uretprobe(name=args.lib, sym="EVP_PKEY_generate", fn_name="probe_evp_keygen_return", pid=args.pid)
 
-# Must match the C struct exactly. 
-# Note: We add _pack_ = 1 to ensure Python and C align memory strictly.
 class CryptoEvent(ctypes.Structure):
     _pack_ = 1
     _fields_ = [
@@ -34,29 +41,46 @@ class CryptoEvent(ctypes.Structure):
         ("algo_name", ctypes.c_char * 32)
     ]
 
+def get_container_id(pid):
+    """Reads /proc to resolve the Docker/containerd container ID."""
+    try:
+        with open(f"/proc/{pid}/cgroup", "r") as f:
+            cgroup_path = f.read()
+        
+        # Look for the 64-character hex string (Docker or containerd)
+        match = re.search(r'(?:docker|containerd)-([a-f0-9]{64})', cgroup_path)
+        if match:
+            return match.group(1)[:12] # Return the short 12-char ID
+    except FileNotFoundError:
+        pass
+    return "Host Process"
+
 def handle_event(cpu, data, size):
     evt = ctypes.cast(data, ctypes.POINTER(CryptoEvent)).contents
     proc_name = evt.comm.decode('utf-8', 'replace')
     algo_name = evt.algo_name.decode('utf-8', 'replace') or "Unknown"
     
-    # Determine what actually happened based on the event_type
+    # Resolve the container ID
+    container_id = get_container_id(evt.pid)
+    
     if evt.event_type == 0:
         action = "[CONTEXT] Algorithm Requested"
-        color = "\033[93m" # Yellow
+        color = "\033[93m"
     elif evt.event_type == 1:
         action = "[ACTION]  Key Generation Initiated"
-        color = "\033[96m" # Cyan
+        color = "\033[96m"
     elif evt.event_type == 2:
         action = "[SUCCESS] Key Generated Successfully"
-        color = "\033[92m" # Green
+        color = "\033[92m"
     else:
         action = "[FAILED]  Key Generation Failed"
-        color = "\033[91m" # Red
+        color = "\033[91m"
 
     print(f"\n{color}{action}\033[0m")
-    print(f"    ├─ PID:      {evt.pid} ({proc_name})")
-    print(f"    ├─ Cgroup:   {evt.cgroup_id}")
-    print(f"    └─ Algo:     {algo_name}")
+    print(f"    ├─ PID:          {evt.pid} ({proc_name})")
+    print(f"    ├─ Container ID: {container_id}") # Updated output
+    print(f"    ├─ Cgroup ID:    {evt.cgroup_id}")
+    print(f"    └─ Algo:         {algo_name}")
     print("-" * 60)
 
 b["qfense_events"].open_perf_buffer(handle_event)
