@@ -5,6 +5,7 @@ import json
 import ctypes
 import re
 import argparse # NEW
+import datetime
 from flask import Flask, render_template, Response
 from bcc import BPF
 
@@ -94,6 +95,33 @@ def stream():
             data = event_queue.get()
             yield f"data: {json.dumps(data)}\n\n"
     return Response(event_stream(), mimetype="text/event-stream")
+
+@app.route('/export-cbom')
+def export_cbom():
+    # This simulates generating a CBOM from your recorded events.
+    # In a real database version, you would query SQLite/Postgres here.
+    cbom = {
+        "bomFormat": "CycloneDX",
+        "specVersion": "1.7",
+        "metadata": {
+            "timestamp": datetime.datetime.utcnow().isoformat() + "Z",
+            "component": {"type": "application", "name": "QFense-eBPF-Agent"}
+        },
+        "components": [
+            {
+                "type": "cryptographic-asset",
+                "name": "process-21444-cgroup-afcada67c3d9",
+                "cryptoProperties": {
+                    "assetType": "algorithm",
+                    "algorithmProperties": {
+                        "algorithmFamily": "RSA",
+                        "keyLength": 2048
+                    }
+                }
+            }
+        ]
+    }
+    return Response(json.dumps(cbom, indent=2), mimetype="application/json", headers={"Content-Disposition": "attachment;filename=qfense_cbom.json"})
 
 if __name__ == '__main__':
     print("[*] Starting QFense Web Dashboard on port 5000...")

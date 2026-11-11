@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+import threading
+import queue
+import json
+import ctypes
+import re
+import argparse # NEW
+from flask import Flask, render_template, Response
+from bcc import BPF
+
+# NEW: Setup argument parser
+parser = argparse.ArgumentParser()
+parser.add_argument("--lib", type=str, default="crypto", help="Path to libcrypto.so.3")
+args = parser.parse_args()
+
+app = Flask(__name__)
+event_queue = queue.Queue()
+
+print(f"[*] Compiling eBPF Probe for target library: {args.lib}")
+with open("agent/probe.c", "r") as f:
+    bpf_text = f.read()
+
+b = BPF(text=bpf_text)
+
+try:
+    print("[*] Attaching probes...")
+    # Use args.lib here instead of hardcoded "crypto"
+    b.attach_uprobe(name=args.lib, sym="EVP_PKEY_CTX_new_from_name", fn_name="probe_evp_context")
+    b.attach_uprobe(name=args.lib, sym="EVP_PKEY_generate", fn_name="probe_evp_keygen_entry")
+    b.attach_uretprobe(name=args.lib, sym="EVP_PKEY_generate", fn_name="probe_evp_keygen_return")
+    print("[*] Probes attached successfully!")
+except Exception as e:
+    print(f"[!] Error attaching probes: {e}")
+    exit(1)
+
+class CryptoEvent(ctypes.Structure):
+    _pack_ = 1
+    _fields_ = [
+        ("cgroup_id", ctypes.c_uint64),
+        ("pid", ctypes.c_uint32),
+        ("event_type", ctypes.c_uint8),
+        ("comm", ctypes.c_char * 16),
+        ("algo_name", ctypes.c_char * 32)
+    ]
+
+def get_container_id(pid):
+    try:
+        with open(f"/proc/{pid}/cgroup", "r") as f:
+            cgroup_path = f.read()
+        match = re.search(r'(?:docker|containerd)-([a-f0-9]{64})', cgroup_path)
+        if match:
+            return match.group(1)[:12]
+    except FileNotFoundError:
+        pass
+    return "Host Process"
+
+def handle_event(cpu, data, size):
+    evt = ctypes.cast(data, ctypes.POINTER(CryptoEvent)).contents
+    proc_name = evt.comm.decode('utf-8', 'replace')
+    algo_name = evt.algo_name.decode('utf-8', 'replace') or "Unknown"
+    
+    action_name = "Context Created"
+    if evt.event_type == 1: action_name = "Keygen Started"
+    elif evt.event_type == 2: action_name = "Keygen Success"
+    elif evt.event_type == 3: action_name = "Keygen Failed"
+
+    payload = {
+        "pid": evt.pid,
+        "proc": proc_name,
+        "algo": algo_name,
+        "event_type": evt.event_type,
+        "action": action_name,
+        "container": get_container_id(evt.pid)
+    }
+    
+    event_queue.put(payload)
+
+b["qfense_events"].open_perf_buffer(handle_event)
+
+def poll_ebpf():
+    while True:
+        b.perf_buffer_poll()
+
+threading.Thread(target=poll_ebpf, daemon=True).start()
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/stream')
+def stream():
+    def event_stream():
+        while True:
+            data = event_queue.get()
+            yield f"data: {json.dumps(data)}\n\n"
+    return Response(event_stream(), mimetype="text/event-stream")
+
+
+
+if __name__ == '__main__':
+    print("[*] Starting QFense Web Dashboard on port 5000...")
+    app.run(host='0.0.0.0', port=5000, threaded=True)

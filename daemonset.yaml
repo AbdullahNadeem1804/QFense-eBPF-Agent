@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: qfense-agent
+  namespace: kube-system
+  labels:
+    app: qfense-agent
+spec:
+  selector:
+    matchLabels:
+      app: qfense-agent
+  template:
+    metadata:
+      labels:
+        app: qfense-agent
+    spec:
+      hostPID: true
+      hostNetwork: true
+      containers:
+      - name: qfense-agent
+        image: qfense-agent:v1
+        imagePullPolicy: Never
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - name: tracing
+          mountPath: /sys/kernel/tracing
+        - name: modules
+          mountPath: /lib/modules
+          readOnly: true
+        - name: src
+          mountPath: /usr/src
+          readOnly: true
+      volumes:
+      - name: tracing
+        hostPath:
+          path: /sys/kernel/tracing
+      - name: modules
+        hostPath:
+          path: /lib/modules
+      - name: src
+        hostPath:
+          path: /usr/src
