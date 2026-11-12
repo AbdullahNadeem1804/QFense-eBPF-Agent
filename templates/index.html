@@ -53,9 +53,17 @@
     <script>
         const eventSource = new EventSource("/stream");
         const tbody = document.getElementById("event-log");
+        
+	// Fetch historical events on page load
+        fetch('/api/v1/events')
+            .then(response => response.json())
+            .then(events => {
+                events.reverse().forEach(data => {
+                    addRowToTable(data);
+                });
+            });
 
-        eventSource.onmessage = function(event) {
-            const data = JSON.parse(event.data);
+        function addRowToTable(data) {
             const row = document.createElement("tr");
             row.className = "table-row transition-colors duration-150";
 
@@ -64,14 +72,28 @@
             if (data.event_type === 2) badgeClass = "badge-success";
 
             row.innerHTML = `
-                <td class="py-3 px-6 text-slate-400">${new Date().toLocaleTimeString()}</td>
+                <td class="py-3 px-6 text-slate-400">${new Date(data.observed_at).toLocaleTimeString()}</td>
                 <td class="py-3 px-6"><span class="px-2 py-1 rounded text-xs font-bold ${badgeClass}">${data.action}</span></td>
-                <td class="py-3 px-6 text-purple-300 font-bold">${data.algo}</td>
-                <td class="py-3 px-6">${data.proc} <span class="text-slate-500">(${data.pid})</span></td>
-                <td class="py-3 px-6 text-cyan-400">${data.container}</td>
+                <td class="py-3 px-6 text-purple-300 font-bold">${data.algorithm}</td>
+                <td class="py-3 px-6">${data.process_name} <span class="text-slate-500">(${data.pid})</span></td>
+                <td class="py-3 px-6 text-cyan-400">${data.container_id}</td>
             `;
-            
             tbody.insertBefore(row, tbody.firstChild);
+        }
+
+        eventSource.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            // Map the live SSE data to match the DB format
+            const dbFormat = {
+                observed_at: new Date().toISOString(),
+                action: data.action,
+                algorithm: data.algo,
+                process_name: data.proc,
+                pid: data.pid,
+                container_id: data.container,
+                event_type: data.event_type
+            };
+            addRowToTable(dbFormat);
             
             if (tbody.children.length > 15) {
                 tbody.removeChild(tbody.lastChild);

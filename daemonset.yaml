@@ -18,7 +18,7 @@ spec:
       hostNetwork: true
       containers:
       - name: qfense-agent
-        image: qfense-agent:v1
+        image: qfense-core:v1
         imagePullPolicy: Never
         securityContext:
           privileged: true
@@ -31,6 +31,9 @@ spec:
         - name: src
           mountPath: /usr/src
           readOnly: true
+        - name: host-lib
+          mountPath: /host/lib
+          readOnly: true
       volumes:
       - name: tracing
         hostPath:
@@ -41,3 +44,6 @@ spec:
       - name: src
         hostPath:
           path: /usr/src
+      - name: host-lib
+        hostPath:
+          path: /lib
