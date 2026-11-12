@@ -40,7 +40,7 @@
                         <th class="py-4 px-6">Event Type</th>
                         <th class="py-4 px-6">Algorithm</th>
                         <th class="py-4 px-6">Process / PID</th>
-                        <th class="py-4 px-6">Container ID</th>
+                        <th class="py-4 px-6">Risk Level</th>
                     </tr>
                 </thead>
                 <tbody id="event-log" class="divide-y divide-slate-700 font-mono text-sm">
@@ -70,13 +70,18 @@
             let badgeClass = "badge-context";
             if (data.event_type === 1) badgeClass = "badge-action";
             if (data.event_type === 2) badgeClass = "badge-success";
+            
+            let riskClass = "bg-gray-600";
+            if (data.risk === "HIGH") riskClass = "bg-red-900 text-red-300";
+            if (data.risk === "MEDIUM") riskClass = "bg-orange-900 text-orange-300";
+            if (data.risk === "SAFE") riskClass = "bg-green-900 text-green-300";
 
             row.innerHTML = `
                 <td class="py-3 px-6 text-slate-400">${new Date(data.observed_at).toLocaleTimeString()}</td>
                 <td class="py-3 px-6"><span class="px-2 py-1 rounded text-xs font-bold ${badgeClass}">${data.action}</span></td>
                 <td class="py-3 px-6 text-purple-300 font-bold">${data.algorithm}</td>
                 <td class="py-3 px-6">${data.process_name} <span class="text-slate-500">(${data.pid})</span></td>
-                <td class="py-3 px-6 text-cyan-400">${data.container_id}</td>
+                <td class="py-3 px-6"><span class="px-2 py-1 rounded text-xs font-bold ${riskClass}">${data.risk || 'INFO'}</span></td>
             `;
             tbody.insertBefore(row, tbody.firstChild);
         }

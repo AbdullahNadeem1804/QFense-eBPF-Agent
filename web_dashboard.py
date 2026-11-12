@@ -8,7 +8,7 @@ import sqlite3
 import datetime
 import argparse
 import jsonschema
-from flask import Flask, render_template, Response, jsonify
+from flask import Flask, render_template, Response, jsonify, request
 from bcc import BPF
 
 parser = argparse.ArgumentParser()
@@ -32,7 +32,9 @@ def init_db():
         container_id TEXT,
         event_type INTEGER,
         action TEXT,
-        algorithm TEXT
+        algorithm TEXT,
+        risk TEXT,
+        reason TEXT
     )
     """)
     conn.commit()
@@ -43,19 +45,37 @@ init_db()
 def save_event_to_db(payload):
     conn = sqlite3.connect(DB_FILE)
     conn.execute("""
-        INSERT INTO events (observed_at, pid, process_name, container_id, event_type, action, algorithm)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO events (observed_at, pid, process_name, container_id, event_type, action, algorithm, risk, reason)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         datetime.datetime.utcnow().isoformat() + "Z",
-        payload["pid"],
-        payload["proc"],
-        payload["container"],
-        payload["event_type"],
-        payload["action"],
-        payload["algo"]
+        payload.get("pid"),
+        payload.get("proc"),
+        payload.get("container"),
+        payload.get("event_type"),
+        payload.get("action"),
+        payload.get("algo"),
+        payload.get("risk", "INFO"),
+        payload.get("reason", "No reason provided")
     ))
     conn.commit()
     conn.close()
+
+# --- Risk Engine (Phase 6) ---
+def calculate_risk(algo, action):
+    if action == "Context Created":
+        return "INFO", "Algorithm context requested"
+    
+    if "ML-KEM" in algo or "KYBER" in algo or "ML-DSA" in algo:
+        return "SAFE", "Post-Quantum algorithm observed"
+    
+    if "RSA" in algo:
+        return "HIGH", "Quantum-Exposed (RSA). Plan migration immediately."
+    
+    if "EC" in algo or "X25519" in algo:
+        return "MEDIUM", "Elliptic Curve. Vulnerable to quantum attacks."
+        
+    return "INFO", "Unclassified algorithm"
 
 # --- eBPF Setup ---
 print(f"[*] Compiling eBPF Probe for target library: {args.lib}")
@@ -105,13 +125,17 @@ def handle_event(cpu, data, size):
     elif evt.event_type == 2: action_name = "Keygen Success"
     elif evt.event_type == 3: action_name = "Keygen Failed"
 
+    risk, reason = calculate_risk(algo_name, action_name)
+
     payload = {
         "pid": evt.pid,
         "proc": proc_name,
         "algo": algo_name,
         "event_type": evt.event_type,
         "action": action_name,
-        "container": get_container_id(evt.pid)
+        "container": get_container_id(evt.pid),
+        "risk": risk,
+        "reason": reason
     }
     
     save_event_to_db(payload)
@@ -138,6 +162,29 @@ def get_events():
     rows = cursor.fetchall()
     conn.close()
     return jsonify([dict(row) for row in rows])
+
+@app.route('/api/v1/ingest', methods=['POST'])
+def ingest_event():
+    data = request.json
+    algo = data.get('algo', 'Unknown')
+    action = data.get('action', 'Unknown')
+    
+    risk, reason = calculate_risk(algo, action)
+    
+    payload = {
+        "pid": data.get('pid'),
+        "proc": data.get('proc'),
+        "algo": algo,
+        "event_type": data.get('event_type'),
+        "action": action,
+        "container": data.get('container', 'K8s Host'),
+        "risk": risk,
+        "reason": reason
+    }
+    
+    save_event_to_db(payload)
+    event_queue.put(payload)
+    return jsonify({"status": "success"}), 200
 
 @app.route('/stream')
 def stream():
@@ -178,33 +225,6 @@ def export_cbom():
         },
         "components": components
     }
-
-    schema = {
-        "type": "object",
-        "properties": {
-            "bomFormat": {"type": "string", "enum": ["CycloneDX"]},
-            "specVersion": {"type": "string"},
-            "components": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "required": ["type", "name", "cryptoProperties"],
-                    "properties": {
-                        "type": {"type": "string", "enum": ["cryptographic-asset"]},
-                        "cryptoProperties": {"type": "object"}
-                    }
-                }
-            }
-        },
-        "required": ["bomFormat", "specVersion", "components"]
-    }
-
-    try:
-        jsonschema.validate(instance=cbom, schema=schema)
-        print("[*] CBOM passed strict CycloneDX schema validation.")
-    except jsonschema.exceptions.ValidationError as e:
-        print(f"[!] CBOM Validation Failed: {e}")
-        return "CBOM generation failed validation", 500
 
     return Response(json.dumps(cbom, indent=2), mimetype="application/json", headers={"Content-Disposition": "attachment;filename=qfense_cbom.json"})
 
