@@ -1,0 +1,30 @@
+name: QFense CI
+
+on:
+  push:
+    branches: [ "main", "feat/**" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y clang llvm libbpf-dev libelf-dev zlib1g-dev python3-bpfcc bpfcc-tools python3-flask python3-jsonschema
+
+    - name: Build CO-RE eBPF Agent
+      run: |
+        cd core-agent
+        sudo bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
+        make
+
+    - name: Check Python Syntax
+      run: |
+        python3 -m py_compile web_dashboard.py
+        python3 -m py_compile bridge.py
