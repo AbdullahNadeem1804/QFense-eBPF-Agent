@@ -1,1 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.db
+*.log
+
+# C / eBPF build artifacts
+core-agent/loader
+core-agent/probe.bpf.o
+core-agent/probe.skel.h
+core-agent/vmlinux.h
+
+# Docker
 *.tar
+
+# Environment
+.env

@@ -24,8 +24,8 @@ static int handle_event(void *ctx, void *data, size_t data_sz) {
     else if (e->event_type == 2) action = "Keygen Success";
     else if (e->event_type == 3) action = "Keygen Failed";
 
-    printf("[%s] PID: %d (%s), Cgroup: %llu, Algo: %s\n", 
-           action, e->pid, e->comm, e->cgroup_id, e->algo_name);
+    printf("{\"event_type\":%d,\"action\":\"%s\",\"pid\":%d,\"proc\":\"%s\",\"cgroup_id\":%llu,\"algo\":\"%s\"}\n",
+           e->event_type, action, e->pid, e->comm, e->cgroup_id, e->algo_name);
 	
     fflush(stdout);
 
