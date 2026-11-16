@@ -40,34 +40,34 @@ QFense uses a decoupled architecture consisting of three main components:
 ### Architecture Diagram
 
 ```text
-                                ┌────────────────────────────────────────────────────────────┐
-                                │                     User-Space Workloads                   │
-                                │        OpenSSL • Python • Nginx • Microservices            │
-                                └───────────────────────┬────────────────────────────────────┘
-                                                        │
-                                                        ▼
-                                              Uprobe: libcrypto.so.3
-                                                        │
-                                                        ▼
-                                ┌────────────────────────────────────────────────────────────┐
-                                │                       Linux Kernel                         │
-                                │   ┌─────────────────────────┐   ┌────────────────────────┐ │
-                                │   │ Semantic Context Map    │   │ BPF Ring Buffer        │ │
-                                │   └────────────┬────────────┘   └────────────┬───────────┘ │
-                                │                └──────────────┬──────────────┘             │
-                                │                               ▼                            │
-                                │                 CO-RE C Agent (DaemonSet)                  │
-                                └───────────────────────────────┬────────────────────────────┘
-                                                                │
-                                                                ▼ (Structured JSON Logs)
-                                ┌────────────────────────────────────────────────────────────┐
-                                │                  QFense Control & UI Layer                 │
-                                │  • Python Bridge (Parses JSON)                             │
-                                │  • Container Attribution (/proc cgroup)                    │
-                                │  • Evidence-Aware Risk Engine (INFO/MEDIUM/HIGH)           │
-                                │  • Dynamic CycloneDX 1.7 CBOM generation                   │
-                                │  • Live Server-Sent Events (SSE) dashboard                 │
-                                └────────────────────────────────────────────────────────────┘
+                          ┌────────────────────────────────────────────────────────────┐
+                          │                     User-Space Workloads                   │
+                          │        OpenSSL • Python • Nginx • Microservices            │
+                          └───────────────────────┬────────────────────────────────────┘
+                                                  │
+                                                  ▼
+                                        Uprobe: libcrypto.so.3
+                                                  │
+                                                  ▼
+                          ┌────────────────────────────────────────────────────────────┐
+                          │                       Linux Kernel                         │
+                          │   ┌─────────────────────────┐   ┌────────────────────────┐ │
+                          │   │ Semantic Context Map    │   │ BPF Ring Buffer        │ │
+                          │   └────────────┬────────────┘   └────────────┬───────────┘ │
+                          │                └──────────────┬──────────────┘             │
+                          │                               ▼                            │
+                          │                 CO-RE C Agent (DaemonSet)                  │
+                          └───────────────────────────────┬────────────────────────────┘
+                                                          │
+                                                          ▼ (Structured JSON Logs)
+                          ┌────────────────────────────────────────────────────────────┐
+                          │                  QFense Control & UI Layer                 │
+                          │  • Python Bridge (Parses JSON)                             │
+                          │  • Container Attribution (/proc cgroup)                    │
+                          │  • Evidence-Aware Risk Engine (INFO/MEDIUM/HIGH)           │
+                          │  • Dynamic CycloneDX 1.7 CBOM generation                   │
+                          │  • Live Server-Sent Events (SSE) dashboard                 │
+                          └────────────────────────────────────────────────────────────┘
 ```
 
 ### Telemetry Pipeline
